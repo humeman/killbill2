@@ -1,0 +1,49 @@
+{
+    "type": "BASIC",
+    "basicConfig": {
+        "playerConfig": {
+            "PLAYER": [
+                {
+                    "id": 0,
+                    "spawnpoint": [13, 1],
+                    "texturePrefix": "players_torvalds",
+                    "maxHealth": 10
+                },
+                {
+                    "id": 1,
+                    "spawnpoint": [13, 3],
+                    "texturePrefix": "players_jobs",
+                    "maxHealth": 10
+                },
+                {
+                    "id": 2,
+                    "spawnpoint": [13, 6],
+                    "texturePrefix": "players_zuck",
+                    "maxHealth": 10
+                },
+                {
+                    "id": 3,
+                    "spawnpoint": [13, 8],
+                    "texturePrefix": "players_bezos",
+                    "maxHealth": 10
+                }
+            ],
+            "BILL": [
+                {
+                    "id": 0,
+                    "spawnpoint": [35, 20.5],
+                    "texturePrefix": "players_gates",
+                    "maxHealth": 16
+                }
+            ],
+            "SPECTATOR": [
+                {
+                    "id": 0,
+                    "spawnpoint": [0, 0],
+                    "texturePrefix": "players_ghost",
+                    "maxHealth": -1
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,2088 @@
+# full game map
+# Author: Caleb Zea
+
+config {
+    name    Square
+}
+
+# cross-shaped room
+room {
+    location        0,0
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    0,4
+    exclude_wall    0,5
+    exclude_wall    9,4
+    exclude_wall    9,5
+    exclude_wall    4,9
+    exclude_wall    5,9
+
+    wall_override   walls_white_wide_b,0,0
+    wall_override   walls_white_wide_b,9,0
+    wall_override   walls_white_full,9,9
+    wall_override   walls_white_wide_l,9,8
+    wall_override   walls_white_wide_l,9,7
+    wall_override   walls_white_wide_l,9,6
+    wall_override   walls_white_wide_l,9,3
+    wall_override   walls_white_wide_l,9,2
+    wall_override   walls_white_wide_l,9,1
+    wall_override   walls_white_wide_r,0,1
+    wall_override   walls_white_wide_r,0,2
+    wall_override   walls_white_wide_r,0,3
+    wall_override   walls_white_wide_r,0,6
+    wall_override   walls_white_wide_r,0,7
+    wall_override   walls_white_wide_r,0,8
+    wall_override   walls_white_wide_b,1,9
+    wall_override   walls_white_wide_b,2,9
+    wall_override   walls_white_wide_b,3,9
+    wall_override   walls_white_wide_b,6,9
+    wall_override   walls_white_wide_b,7,9
+    wall_override   walls_white_wide_b,8,9
+    wall_override   walls_white_wide_tl,0,9
+
+}
+
+object {
+    texture     objects_document_stack_2
+    location    5+1/2,2+1/2
+    location    -6+1/2,4+1/3
+    rotation    90
+}
+
+object {
+    texture     objects_document_stack_2
+    location    15+3/5,3+1/3
+    rotation    147
+}
+
+object {
+    texture     objects_document_stack_2
+    location    3,6+1/2
+    location    -2,8
+}
+
+object {
+    texture     objects_document_stack_1
+    location    7+1/2,5
+    location    13+2/5,7+7/50
+}
+
+object {
+    texture     objects_mug
+    location    3-1/5,1
+    location    -4+4/5,1
+    location    -10+4/5,48
+    rotation    135
+}
+
+object {
+    texture     objects_floor_plant_1
+    location    3,1
+    location    -9,48
+    flag        SOLID
+}
+
+# right corner room
+room {
+    location        -10,0
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -1,4
+    exclude_wall    -1,5
+    exclude_wall    -5,9
+    exclude_wall    -6,9
+
+    wall_override   walls_white_wide_b,-10,0
+    wall_override   walls_white_full,-1,9
+    wall_override   walls_white_wide_l,-1,8
+    wall_override   walls_white_wide_l,-1,7
+    wall_override   walls_white_wide_l,-1,6
+    wall_override   walls_white_wide_l,-1,3
+    wall_override   walls_white_wide_l,-1,2
+    wall_override   walls_white_wide_l,-1,1
+    wall_override   walls_white_wide_b,-1,0
+    wall_override   walls_white_wide_r,-10,1
+    wall_override   walls_white_wide_r,-10,2
+    wall_override   walls_white_wide_r,-10,3
+    wall_override   walls_white_wide_r,-10,4
+    wall_override   walls_white_wide_r,-10,5
+    wall_override   walls_white_wide_r,-10,6
+    wall_override   walls_white_wide_r,-10,7
+    wall_override   walls_white_wide_r,-10,8
+    wall_override   walls_white_wide_b,-9,9
+    wall_override   walls_white_wide_b,-8,9
+    wall_override   walls_white_wide_b,-7,9
+    wall_override   walls_white_wide_b,-4,9
+    wall_override   walls_white_wide_b,-3,9
+    wall_override   walls_white_wide_b,-2,9
+    wall_override   walls_white_wide_tl,-10,9
+}
+
+# left corner room
+room {
+    location        10,0
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    10,5
+    exclude_wall    10,4
+    exclude_wall    14,9
+    exclude_wall    15,9
+
+    wall_override   walls_white_wide_b,10,0
+    wall_override   walls_white_wide_b,19,0
+    wall_override   walls_white_full,19,9
+    wall_override   walls_white_wide_l,19,8
+    wall_override   walls_white_wide_l,19,7
+    wall_override   walls_white_wide_l,19,6
+    wall_override   walls_white_wide_l,19,5
+    wall_override   walls_white_wide_l,19,4
+    wall_override   walls_white_wide_l,19,3
+    wall_override   walls_white_wide_l,19,2
+    wall_override   walls_white_wide_l,19,1
+    wall_override   walls_white_wide_r,10,1
+    wall_override   walls_white_wide_r,10,2
+    wall_override   walls_white_wide_r,10,3
+    wall_override   walls_white_wide_r,10,6
+    wall_override   walls_white_wide_r,10,7
+    wall_override   walls_white_wide_r,10,8
+    wall_override   walls_white_wide_b,11,9
+    wall_override   walls_white_wide_b,12,9
+    wall_override   walls_white_wide_b,13,9
+    wall_override   walls_white_wide_b,16,9
+    wall_override   walls_white_wide_b,17,9
+    wall_override   walls_white_wide_b,18,9
+    wall_override   walls_white_wide_b,19,9
+    wall_override   walls_white_wide_tl,10,9
+}
+
+room {
+    location        0,10
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    4,10
+    exclude_wall    5,10
+    exclude_wall    0,11
+    exclude_wall    0,12
+    exclude_wall    0,13
+    exclude_wall    0,14
+    exclude_wall    0,15
+    exclude_wall    0,16
+    exclude_wall    0,17
+    exclude_wall    0,18
+    exclude_wall    0,19
+    exclude_wall    1,19
+    exclude_wall    2,19
+    exclude_wall    3,19
+    exclude_wall    4,19
+    exclude_wall    5,19
+    exclude_wall    6,19
+    exclude_wall    7,19
+    exclude_wall    8,19
+    exclude_wall    9,19
+    exclude_wall    9,18
+    exclude_wall    9,17
+    exclude_wall    9,16
+    exclude_wall    9,15
+    exclude_wall    9,14
+    exclude_wall    9,13
+    exclude_wall    9,12
+    exclude_wall    9,11
+
+    wall_override   walls_white_wide_t,9,10
+    wall_override   walls_white_wide_t,0,10
+    wall_override   walls_white_wide_t,1,10
+    wall_override   walls_white_wide_t,2,10
+    wall_override   walls_white_wide_t,3,10
+    wall_override   walls_white_wide_t,6,10
+    wall_override   walls_white_wide_t,7,10
+    wall_override   walls_white_wide_t,8,10
+}
+
+room {
+    location        10,10
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    14,10
+    exclude_wall    15,10
+    exclude_wall    10,11
+    exclude_wall    10,12
+    exclude_wall    10,13
+    exclude_wall    10,14
+    exclude_wall    10,15
+    exclude_wall    10,16
+    exclude_wall    10,17
+    exclude_wall    10,18
+    exclude_wall    10,19
+    exclude_wall    11,19
+    exclude_wall    12,19
+    exclude_wall    13,19
+    exclude_wall    14,19
+    exclude_wall    15,19
+    exclude_wall    16,19
+    exclude_wall    17,19
+    exclude_wall    18,19
+    exclude_wall    19,19
+    exclude_wall    19,18
+    exclude_wall    19,17
+    exclude_wall    19,16
+    exclude_wall    19,15
+    exclude_wall    19,14
+    exclude_wall    19,13
+    exclude_wall    19,12
+    exclude_wall    19,11
+
+    wall_override   walls_white_wide_t,10,10
+    wall_override   walls_white_wide_t,19,10
+    wall_override   walls_white_wide_t,11,10
+    wall_override   walls_white_wide_t,12,10
+    wall_override   walls_white_wide_t,13,10
+    wall_override   walls_white_wide_t,16,10
+    wall_override   walls_white_wide_t,17,10
+    wall_override   walls_white_wide_t,18,10
+}
+
+room {
+    location        -10,10
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -5,10
+    exclude_wall    -6,10
+    exclude_wall    -10,11
+    exclude_wall    -10,12
+    exclude_wall    -10,13
+    exclude_wall    -10,14
+    exclude_wall    -10,15
+    exclude_wall    -10,16
+    exclude_wall    -10,17
+    exclude_wall    -10,18
+    exclude_wall    -10,19
+    exclude_wall    -9,19
+    exclude_wall    -8,19
+    exclude_wall    -7,19
+    exclude_wall    -6,19
+    exclude_wall    -5,19
+    exclude_wall    -4,19
+    exclude_wall    -3,19
+    exclude_wall    -2,19
+    exclude_wall    -1,19
+    exclude_wall    -1,18
+    exclude_wall    -1,17
+    exclude_wall    -1,16
+    exclude_wall    -1,15
+    exclude_wall    -1,14
+    exclude_wall    -1,13
+    exclude_wall    -1,12
+    exclude_wall    -1,11
+
+    wall_override   walls_white_wide_t,-10,10
+    wall_override   walls_white_wide_t,-9,10
+    wall_override   walls_white_wide_t,-8,10
+    wall_override   walls_white_wide_t,-7,10
+    wall_override   walls_white_wide_t,-4,10
+    wall_override   walls_white_wide_t,-3,10
+    wall_override   walls_white_wide_t,-2,10
+    wall_override   walls_white_wide_t,-1,10
+}
+
+room {
+    location        20,0
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    24,9
+    exclude_wall    25,9
+
+    wall_override   walls_white_wide_b,20,0
+    wall_override   walls_white_wide_r,29,9
+    wall_override   walls_white_wide_r,20,1
+    wall_override   walls_white_wide_r,20,2
+    wall_override   walls_white_wide_r,20,3
+    wall_override   walls_white_wide_r,20,4
+    wall_override   walls_white_wide_r,20,5
+    wall_override   walls_white_wide_r,20,6
+    wall_override   walls_white_wide_r,20,7
+    wall_override   walls_white_wide_r,20,8
+    wall_override   walls_white_wide_b,21,9
+    wall_override   walls_white_wide_b,22,9
+    wall_override   walls_white_wide_b,23,9
+    wall_override   walls_white_wide_b,26,9
+    wall_override   walls_white_wide_b,27,9
+    wall_override   walls_white_wide_b,28,9
+    wall_override   walls_white_wide_tl,20,9
+}
+
+room {
+    location        20,10
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    24,10
+    exclude_wall    25,10
+    exclude_wall    20,11
+    exclude_wall    20,12
+    exclude_wall    20,13
+    exclude_wall    20,14
+    exclude_wall    20,15
+    exclude_wall    20,16
+    exclude_wall    20,17
+    exclude_wall    20,18
+    exclude_wall    20,19
+    exclude_wall    21,19
+    exclude_wall    22,19
+    exclude_wall    23,19
+    exclude_wall    24,19
+    exclude_wall    25,19
+    exclude_wall    26,19
+    exclude_wall    27,19
+    exclude_wall    28,19
+
+    wall_override   walls_white_wide_t,20,10
+    wall_override   walls_white_wide_t,21,10
+    wall_override   walls_white_wide_t,22,10
+    wall_override   walls_white_wide_t,23,10
+    wall_override   walls_white_wide_t,26,10
+    wall_override   walls_white_wide_t,27,10
+    wall_override   walls_white_wide_t,28,10
+    wall_override   walls_white_wide_r,29,10
+    wall_override   walls_white_wide_r,29,19
+}
+
+room {
+    location        -20,10
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -15,10
+    exclude_wall    -16,10
+    exclude_wall    -19,19
+    exclude_wall    -18,19
+    exclude_wall    -17,19
+    exclude_wall    -16,19
+    exclude_wall    -15,19
+    exclude_wall    -14,19
+    exclude_wall    -13,19
+    exclude_wall    -12,19
+    exclude_wall    -11,19
+    exclude_wall    -11,18
+    exclude_wall    -11,17
+    exclude_wall    -11,16
+    exclude_wall    -11,15
+    exclude_wall    -11,14
+    exclude_wall    -11,13
+    exclude_wall    -11,12
+    exclude_wall    -11,11
+
+    wall_override   walls_white_l,-20,19
+    wall_override   walls_white_wide_l,-20,10
+    wall_override   walls_white_wide_t,-19,10
+    wall_override   walls_white_wide_t,-18,10
+    wall_override   walls_white_wide_t,-17,10
+    wall_override   walls_white_wide_t,-16,10
+    wall_override   walls_white_wide_t,-15,10
+    wall_override   walls_white_wide_t,-14,10
+    wall_override   walls_white_wide_t,-13,10
+    wall_override   walls_white_wide_t,-12,10
+    wall_override   walls_white_wide_t,-11,10
+    wall_override   walls_white_wide_t,-10,10
+}
+
+room {
+    location        -20,0
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -15,9
+    exclude_wall    -16,9
+    wall_override   walls_white_full,-11,9
+    wall_override   walls_white_wide_l,-11,8
+    wall_override   walls_white_wide_l,-11,7
+    wall_override   walls_white_wide_l,-11,6
+    wall_override   walls_white_wide_l,-11,5
+    wall_override   walls_white_wide_l,-11,4
+    wall_override   walls_white_wide_l,-11,3
+    wall_override   walls_white_wide_l,-11,2
+    wall_override   walls_white_wide_l,-11,1
+    wall_override   walls_white_wide_b,-11,0
+    wall_override   walls_white_wide_b,-19,9
+    wall_override   walls_white_wide_b,-18,9
+    wall_override   walls_white_wide_b,-17,9
+    wall_override   walls_white_wide_b,-16,9
+    wall_override   walls_white_wide_b,-14,9
+    wall_override   walls_white_wide_b,-13,9
+    wall_override   walls_white_wide_b,-12,9
+    wall_override   walls_white_wide_b,-11,9
+    wall_override   walls_white_wide_tl_ext_l,-20,9
+}
+
+room {
+    location        20,20
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    20,20
+    exclude_wall    21,20
+    exclude_wall    22,20
+    exclude_wall    23,20
+    exclude_wall    24,20
+    exclude_wall    25,20
+    exclude_wall    26,20
+    exclude_wall    27,20
+    exclude_wall    28,20
+    exclude_wall    20,21
+    exclude_wall    20,22
+    exclude_wall    20,23
+    exclude_wall    20,24
+    exclude_wall    20,25
+    exclude_wall    20,26
+    exclude_wall    20,27
+    exclude_wall    20,28
+    exclude_wall    20,29
+    exclude_wall    21,29
+    exclude_wall    22,29
+    exclude_wall    23,29
+    exclude_wall    24,29
+    exclude_wall    25,29
+    exclude_wall    26,29
+    exclude_wall    27,29
+    exclude_wall    28,29
+
+    wall_override   walls_white_r,29,20
+    wall_override   walls_white_r,29,29
+}
+
+room {
+    location        10,20
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+
+    exclude_wall    10,20
+    exclude_wall    10,21
+    exclude_wall    10,22
+    exclude_wall    10,23
+    exclude_wall    10,24
+    exclude_wall    10,25
+    exclude_wall    10,26
+    exclude_wall    10,27
+    exclude_wall    10,28
+    exclude_wall    10,29
+    exclude_wall    11,20
+    exclude_wall    12,20
+    exclude_wall    13,20
+    exclude_wall    14,20
+    exclude_wall    15,20
+    exclude_wall    16,20
+    exclude_wall    17,20
+    exclude_wall    18,20
+    exclude_wall    19,20
+    exclude_wall    19,21
+    exclude_wall    19,22
+    exclude_wall    19,23
+    exclude_wall    19,24
+    exclude_wall    19,25
+    exclude_wall    19,26
+    exclude_wall    19,27
+    exclude_wall    19,28
+    exclude_wall    19,29
+    exclude_wall    18,29
+    exclude_wall    17,29
+    exclude_wall    16,29
+    exclude_wall    15,29
+    exclude_wall    14,29
+    exclude_wall    13,29
+    exclude_wall    12,29
+    exclude_wall    11,29
+}
+
+room {
+    location        0,20
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    0,20
+    exclude_wall    0,21
+    exclude_wall    0,22
+    exclude_wall    0,23
+    exclude_wall    0,24
+    exclude_wall    0,25
+    exclude_wall    0,26
+    exclude_wall    0,27
+    exclude_wall    0,28
+    exclude_wall    0,29
+    exclude_wall    1,29
+    exclude_wall    2,29
+    exclude_wall    3,29
+    exclude_wall    4,29
+    exclude_wall    5,29
+    exclude_wall    6,29
+    exclude_wall    7,29
+    exclude_wall    8,29
+    exclude_wall    9,29
+    exclude_wall    9,28
+    exclude_wall    9,27
+    exclude_wall    9,26
+    exclude_wall    9,25
+    exclude_wall    9,24
+    exclude_wall    9,23
+    exclude_wall    9,22
+    exclude_wall    9,21
+    exclude_wall    9,20
+    exclude_wall    8,20
+    exclude_wall    7,20
+    exclude_wall    6,20
+    exclude_wall    5,20
+    exclude_wall    4,20
+    exclude_wall    3,20
+    exclude_wall    2,20
+    exclude_wall    1,20
+}
+
+room {
+    location        20,30
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    20,30
+    exclude_wall    20,31
+    exclude_wall    20,32
+    exclude_wall    20,33
+    exclude_wall    20,34
+    exclude_wall    20,35
+    exclude_wall    20,36
+    exclude_wall    20,37
+    exclude_wall    20,38
+    exclude_wall    24,39
+    exclude_wall    25,39
+    exclude_wall    21,30
+    exclude_wall    22,30
+    exclude_wall    23,30
+    exclude_wall    24,30
+    exclude_wall    25,30
+    exclude_wall    26,30
+    exclude_wall    27,30
+    exclude_wall    27,30
+    exclude_wall    28,30
+    
+    wall_override   walls_white_r,29,30
+    wall_override   walls_white_wide_b,20,39
+    wall_override   walls_white_wide_b,21,39
+    wall_override   walls_white_wide_b,22,39
+    wall_override   walls_white_wide_b,23,39
+    wall_override   walls_white_wide_b,26,39
+    wall_override   walls_white_wide_b,27,39
+    wall_override   walls_white_wide_b,28,39
+    wall_override   walls_white_wide_r,29,39
+}
+
+room {
+    location        20,40
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    24,40
+    exclude_wall    25,40
+
+    wall_override   walls_white_full,20,40
+    wall_override   walls_white_wide_r,20,41
+    wall_override   walls_white_wide_r,20,42
+    wall_override   walls_white_wide_r,20,43
+    wall_override   walls_white_wide_r,20,44
+    wall_override   walls_white_wide_r,20,45
+    wall_override   walls_white_wide_r,20,46
+    wall_override   walls_white_wide_r,20,47
+    wall_override   walls_white_wide_r,20,48
+    wall_override   walls_white_wide_tr,29,49
+    wall_override   walls_white_wide_t,21,40
+    wall_override   walls_white_wide_t,22,40
+    wall_override   walls_white_wide_t,23,40
+    wall_override   walls_white_wide_t,26,40
+    wall_override   walls_white_wide_t,27,40
+    wall_override   walls_white_wide_t,28,40
+    wall_override   walls_white_wide_r,29,40
+    wall_override   walls_white_wide_tl_ext_t,20,49
+}
+
+room {
+    location        10,40
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+
+    exclude_wall    14,40
+    exclude_wall    15,40
+    exclude_wall    10,45
+    exclude_wall    10,44
+
+    wall_override   walls_white_full,10,40
+    wall_override   walls_white_wide_r,10,41
+    wall_override   walls_white_wide_r,10,42
+    wall_override   walls_white_wide_r,10,43
+    wall_override   walls_white_wide_r,10,46
+    wall_override   walls_white_wide_r,10,47
+    wall_override   walls_white_wide_r,10,48
+    wall_override   walls_white_wide_t,19,49
+    wall_override   walls_white_wide_l,19,48
+    wall_override   walls_white_wide_l,19,47
+    wall_override   walls_white_wide_l,19,46
+    wall_override   walls_white_wide_l,19,45
+    wall_override   walls_white_wide_l,19,44
+    wall_override   walls_white_wide_l,19,43
+    wall_override   walls_white_wide_l,19,42
+    wall_override   walls_white_wide_l,19,41
+    wall_override   walls_white_full,19,40
+    wall_override   walls_white_wide_t,18,40
+    wall_override   walls_white_wide_t,17,40
+    wall_override   walls_white_wide_t,16,40
+    wall_override   walls_white_wide_t,13,40
+    wall_override   walls_white_wide_t,12,40
+    wall_override   walls_white_wide_t,11,40
+    wall_override   walls_white_wide_tl_ext_t,10,49
+}
+
+room {
+    location        10,30
+    size            10,10  
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    10,30
+    exclude_wall    10,31
+    exclude_wall    10,32
+    exclude_wall    10,33
+    exclude_wall    10,34
+    exclude_wall    10,35
+    exclude_wall    10,36
+    exclude_wall    10,37
+    exclude_wall    10,38
+    exclude_wall    19,30
+    exclude_wall    14,39
+    exclude_wall    15,39
+    exclude_wall    19,38
+    exclude_wall    19,37
+    exclude_wall    19,36
+    exclude_wall    19,35
+    exclude_wall    19,34
+    exclude_wall    19,33
+    exclude_wall    19,32
+    exclude_wall    19,31
+    exclude_wall    18,30
+    exclude_wall    17,30
+    exclude_wall    16,30
+    exclude_wall    15,30
+    exclude_wall    14,30
+    exclude_wall    13,30
+    exclude_wall    12,30
+    exclude_wall    11,30
+
+    wall_override   walls_white_wide_b,10,39
+    wall_override   walls_white_wide_b,11,39
+    wall_override   walls_white_wide_b,12,39
+    wall_override   walls_white_wide_b,13,39
+    wall_override   walls_white_wide_b,16,39
+    wall_override   walls_white_wide_b,17,39
+    wall_override   walls_white_wide_b,18,39
+    wall_override   walls_white_wide_b,19,39
+}
+
+room {
+    location        0,40
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    9,44
+    exclude_wall    9,45
+    exclude_wall    0,44
+    exclude_wall    0,45
+    exclude_wall    4,40
+    exclude_wall    5,40
+
+    wall_override   walls_white_full,0,40
+    wall_override   walls_white_wide_t,1,40
+    wall_override   walls_white_wide_t,2,40
+    wall_override   walls_white_wide_t,3,40
+    wall_override   walls_white_wide_t,6,40
+    wall_override   walls_white_wide_t,7,40
+    wall_override   walls_white_wide_t,8,40
+    wall_override   walls_white_full,9,40
+    wall_override   walls_white_wide_l,9,41
+    wall_override   walls_white_wide_l,9,42
+    wall_override   walls_white_wide_l,9,43
+    wall_override   walls_white_wide_l,9,46
+    wall_override   walls_white_wide_l,9,47
+    wall_override   walls_white_wide_l,9,48
+    wall_override   walls_white_wide_t,9,49
+    wall_override   walls_white_wide_r,0,48
+    wall_override   walls_white_wide_r,0,47
+    wall_override   walls_white_wide_r,0,46
+    wall_override   walls_white_wide_r,0,43
+    wall_override   walls_white_wide_r,0,42
+    wall_override   walls_white_wide_r,0,41
+    wall_override   walls_white_wide_tl_ext_t,0,49
+}
+
+room {
+    location        -10,40
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -1,44
+    exclude_wall    -1,45
+    exclude_wall    -5,40
+    exclude_wall    -6,40
+
+    wall_override   walls_white_full,-10,40
+    wall_override   walls_white_wide_t,-9,40
+    wall_override   walls_white_wide_t,-8,40
+    wall_override   walls_white_wide_t,-7,40
+    wall_override   walls_white_wide_t,-4,40
+    wall_override   walls_white_wide_t,-3,40
+    wall_override   walls_white_wide_t,-2,40
+    wall_override   walls_white_full,-1,40
+    wall_override   walls_white_wide_l,-1,41
+    wall_override   walls_white_wide_l,-1,42
+    wall_override   walls_white_wide_l,-1,43
+    wall_override   walls_white_wide_l,-1,46
+    wall_override   walls_white_wide_l,-1,47
+    wall_override   walls_white_wide_l,-1,48
+    wall_override   walls_white_wide_t,-1,49
+    wall_override   walls_white_wide_r,-10,48
+    wall_override   walls_white_wide_r,-10,47
+    wall_override   walls_white_wide_r,-10,46
+    wall_override   walls_white_wide_r,-10,45
+    wall_override   walls_white_wide_r,-10,44
+    wall_override   walls_white_wide_r,-10,43
+    wall_override   walls_white_wide_r,-10,42
+    wall_override   walls_white_wide_r,-10,41
+    wall_override   walls_white_wide_tl_ext_t,-10,49
+}
+
+room {
+    location        -20,40
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -15,40
+    exclude_wall    -16,40
+
+    wall_override   walls_white_wide_t,-19,40
+    wall_override   walls_white_wide_t,-18,40
+    wall_override   walls_white_wide_t,-17,40
+    wall_override   walls_white_wide_t,-14,40
+    wall_override   walls_white_wide_t,-13,40
+    wall_override   walls_white_wide_t,-12,40
+    wall_override   walls_white_full,-11,40
+    wall_override   walls_white_wide_l,-20,40
+    wall_override   walls_white_wide_t,-11,49
+    wall_override   walls_white_wide_l,-11,48
+    wall_override   walls_white_wide_l,-11,47
+    wall_override   walls_white_wide_l,-11,46
+    wall_override   walls_white_wide_l,-11,45
+    wall_override   walls_white_wide_l,-11,44
+    wall_override   walls_white_wide_l,-11,43
+    wall_override   walls_white_wide_l,-11,42
+    wall_override   walls_white_wide_l,-11,41
+}
+
+room {
+    location        0,30
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    0,30
+    exclude_wall    0,31
+    exclude_wall    0,32
+    exclude_wall    0,33
+    exclude_wall    0,34
+    exclude_wall    0,35
+    exclude_wall    0,36
+    exclude_wall    0,37
+    exclude_wall    0,38
+    exclude_wall    4,39
+    exclude_wall    5,39
+    exclude_wall    9,38
+    exclude_wall    9,37
+    exclude_wall    9,36
+    exclude_wall    9,35
+    exclude_wall    9,34
+    exclude_wall    9,33
+    exclude_wall    9,32
+    exclude_wall    9,31
+    exclude_wall    1,30
+    exclude_wall    2,30
+    exclude_wall    3,30
+    exclude_wall    4,30
+    exclude_wall    5,30
+    exclude_wall    6,30
+    exclude_wall    7,30
+    exclude_wall    8,30
+    exclude_wall    9,30
+
+    wall_override   walls_white_wide_b,0,39
+    wall_override   walls_white_wide_b,1,39
+    wall_override   walls_white_wide_b,2,39
+    wall_override   walls_white_wide_b,3,39
+    wall_override   walls_white_wide_b,6,39
+    wall_override   walls_white_wide_b,7,39
+    wall_override   walls_white_wide_b,8,39
+    wall_override   walls_white_wide_b,9,39
+}
+
+room {
+    location        -10,30
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -10,30
+    exclude_wall    -10,31
+    exclude_wall    -10,32
+    exclude_wall    -10,33
+    exclude_wall    -10,34
+    exclude_wall    -10,35
+    exclude_wall    -10,36
+    exclude_wall    -10,37
+    exclude_wall    -10,38
+    exclude_wall    -6,39
+    exclude_wall    -5,39
+    exclude_wall    -1,38
+    exclude_wall    -1,37
+    exclude_wall    -1,36
+    exclude_wall    -1,35
+    exclude_wall    -1,34
+    exclude_wall    -1,33
+    exclude_wall    -1,32
+    exclude_wall    -1,31
+    exclude_wall    -9,30
+    exclude_wall    -8,30
+    exclude_wall    -7,30
+    exclude_wall    -6,30
+    exclude_wall    -5,30
+    exclude_wall    -4,30
+    exclude_wall    -3,30
+    exclude_wall    -2,30
+    exclude_wall    -1,30
+
+    wall_override   walls_white_wide_b,-10,39
+    wall_override   walls_white_wide_b,-9,39
+    wall_override   walls_white_wide_b,-8,39
+    wall_override   walls_white_wide_b,-7,39
+    wall_override   walls_white_wide_b,-4,39
+    wall_override   walls_white_wide_b,-3,39
+    wall_override   walls_white_wide_b,-2,39
+    wall_override   walls_white_wide_b,-1,39
+}
+
+room {
+    location        -10,20
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -10,20
+    exclude_wall    -10,21
+    exclude_wall    -10,22
+    exclude_wall    -10,23
+    exclude_wall    -10,24
+    exclude_wall    -10,25
+    exclude_wall    -10,26
+    exclude_wall    -10,27
+    exclude_wall    -10,28
+    exclude_wall    -10,29
+    exclude_wall    -9,29
+    exclude_wall    -8,29
+    exclude_wall    -7,29
+    exclude_wall    -6,29
+    exclude_wall    -5,29
+    exclude_wall    -4,29
+    exclude_wall    -3,29
+    exclude_wall    -2,29
+    exclude_wall    -1,29
+    exclude_wall    -9,20
+    exclude_wall    -8,20
+    exclude_wall    -7,20
+    exclude_wall    -6,20
+    exclude_wall    -5,20
+    exclude_wall    -4,20
+    exclude_wall    -3,20
+    exclude_wall    -2,20
+    exclude_wall    -1,20
+    exclude_wall    -1,21
+    exclude_wall    -1,22
+    exclude_wall    -1,23
+    exclude_wall    -1,24
+    exclude_wall    -1,25
+    exclude_wall    -1,26
+    exclude_wall    -1,27
+    exclude_wall    -1,28
+}
+
+room {
+    location        -20,30
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -19,30
+    exclude_wall    -18,30
+    exclude_wall    -17,30
+    exclude_wall    -16,30
+    exclude_wall    -15,30
+    exclude_wall    -14,30
+    exclude_wall    -13,30
+    exclude_wall    -12,30
+    exclude_wall    -11,30
+    exclude_wall    -11,31
+    exclude_wall    -11,32
+    exclude_wall    -11,33
+    exclude_wall    -11,34
+    exclude_wall    -11,35
+    exclude_wall    -11,36
+    exclude_wall    -11,37
+    exclude_wall    -11,38
+    exclude_wall    -15,39
+    exclude_wall    -16,39
+
+    wall_override   walls_white_l,-20,30
+    wall_override   walls_white_wide_b,-19,39
+    wall_override   walls_white_wide_b,-18,39
+    wall_override   walls_white_wide_b,-17,39
+    wall_override   walls_white_wide_b,-14,39
+    wall_override   walls_white_wide_b,-13,39
+    wall_override   walls_white_wide_b,-12,39
+    wall_override   walls_white_wide_b,-11,39
+    wall_override   walls_white_t,-11,39
+    wall_override   walls_white_wide_tl_ext_l,-20,39
+}
+
+room {
+    location        -20,20
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    -19,20
+    exclude_wall    -18,20
+    exclude_wall    -17,20
+    exclude_wall    -16,20
+    exclude_wall    -15,20
+    exclude_wall    -14,20
+    exclude_wall    -13,20
+    exclude_wall    -12,20
+    exclude_wall    -11,20
+    exclude_wall    -11,21
+    exclude_wall    -11,22
+    exclude_wall    -11,23
+    exclude_wall    -11,24
+    exclude_wall    -11,25
+    exclude_wall    -11,26
+    exclude_wall    -11,27
+    exclude_wall    -11,28
+    exclude_wall    -11,29
+    exclude_wall    -12,29
+    exclude_wall    -13,29
+    exclude_wall    -14,29
+    exclude_wall    -15,29
+    exclude_wall    -16,29
+    exclude_wall    -17,29
+    exclude_wall    -18,29
+    exclude_wall    -19,29
+
+    wall_override   walls_white_l,-20,20
+    wall_override   walls_white_l,-20,29
+}
+
+chest {
+    texture         objects_briefcase_t
+    open_texture    objects_briefcase_t_open
+    location        18,6
+    rotation        270
+    flag            SOLID
+    loot_table      50,SPEAR
+    loot_table      25,SWORD
+    loot_table      15,AXE
+    loot_table      10,HAMMER
+}
+
+chest {
+    texture         objects_briefcase_t
+    open_texture    objects_briefcase_t_open
+    location        18,44
+    rotation        270
+    flag            SOLID
+    loot_table      50,SPEAR
+    loot_table      25,SWORD
+    loot_table      15,AXE
+    loot_table      10,HAMMER
+}
+
+chest {
+    texture         objects_briefcase_t
+    open_texture    objects_briefcase_t_open
+    location        -9,6
+    rotation        90
+    flag            SOLID
+    loot_table      50,SPEAR
+    loot_table      25,SWORD
+    loot_table      15,AXE
+    loot_table      10,HAMMER
+}
+
+chest {
+    texture         objects_briefcase_t
+    open_texture    objects_briefcase_t_open
+    location        18,22
+    loot_table      50,SPEAR
+    loot_table      25,SWORD
+    loot_table      15,AXE
+    loot_table      10,HAMMER
+}
+
+chest {
+    texture         objects_briefcase_t
+    open_texture    objects_briefcase_t_open
+    location        -10,30
+    loot_table      50,SPEAR
+    loot_table      25,SWORD
+    loot_table      15,AXE
+    loot_table      10,HAMMER
+}
+
+chest {
+    texture         objects_briefcase_t
+    open_texture    objects_briefcase_t_open
+    location        -9,44
+    rotation        90
+    flag            SOLID
+    loot_table      50,SPEAR
+    loot_table      25,SWORD
+    loot_table      15,AXE
+    loot_table      10,HAMMER
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        24,1
+    flag            SOLID
+    rotation        180
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        25,1
+    flag            SOLID
+    rotation        180
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -16,1
+    flag            SOLID
+    rotation        180
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -15,1
+    flag            SOLID
+    rotation        180
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        24,48
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        25,48
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -16,48
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -15,48
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -19,11
+    flag            SOLID
+    rotation        180
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -18,11
+    rotation        180
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -17,11
+    rotation        180
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        28,11
+    rotation        180
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        27,11
+    rotation        180
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        26,11
+    rotation        180
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        28,38
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        27,38
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        26,38
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -19,38
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -18,38
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+chest {
+    texture         objects_vending_machine_t
+    open_texture    objects_vending_machine_t_open
+    location        -17,38
+    flag            SOLID
+    loot_table      30,HEALTH_POTION
+    loot_table      20,SPEED_POTION
+    loot_table      25,RESISTANCE_POTION
+    loot_table      25,STRENGTH_POTION
+}
+
+object {
+    texture         objects_desk_1
+    location        -9,6
+    location        -9,5
+    location        -9,4
+    location        -9,46
+    location        -9,45
+    location        -9,44
+    location        6,8
+    flag            SOLID
+}
+
+object {
+    texture         objects_desk_1
+    location        18,6
+    location        18,5
+    location        18,4
+    location        18,46
+    location        18,45
+    location        18,44
+    rotation        270
+
+    flag            SOLID
+}
+
+object {
+    texture     objects_floor_plant_3
+    location    6,8
+    location    12,8
+    location    1,41
+    location    8,41
+    flag        SOLID
+}
+
+object {
+    texture     objects_monitor
+    location    -10+2/3,5
+    location    -10+2/3,45
+    rotation    90
+}
+
+object {
+    texture     objects_monitor
+    location    18+1/3,5
+    location    18+1/3,45
+    rotation    270
+}
+
+object {
+    texture     objects_keyboard_3_4_3_8
+    location    -10+9/8,5+1/4
+    location    -10+9/8,45+1/4
+    size        1,1/2
+    rotation    90
+}
+
+object {
+    texture     objects_keyboard_3_4_3_8
+    location    18-1/8,5+1/4
+    location    18-1/8,45+1/4
+    size        1,1/2
+    rotation    270
+}
+
+object {
+    texture     objects_filing_cabinet
+    location    -9,1
+    location    -8,1
+    location    -9,2
+    location    -2,48
+    location    -3,48
+    location    -2,47
+    flag        SOLID
+}
+
+chest {
+    texture         objects_briefcase_t
+    open_texture    objects_briefcase_t_open
+    location        4,48
+    loot_table      100,SUMMONING_WAND
+}
+
+object {
+    texture     objects_filing_cabinet
+    location    11,1
+    location    12,1
+    location    11,2
+    location    11,48
+    location    11,47
+    location    12,48
+    location    1,48
+    location    2,48
+    location    1,47
+    location    8,47
+    location    8,48
+    location    7,48
+    flag        SOLID
+}
+
+object {
+    texture     objects_chair
+    location    -8,5
+    location    -8,45
+    rotation    270
+    flag        SOLID
+}
+
+object {
+    texture     objects_chair
+    location    17,5
+    location    17,45
+    rotation    90
+    flag        SOLID
+}
+
+object {
+    texture     objects_filing_cabinet
+    location    -19,1
+    location    -19,2
+    location    -19,3
+    location    -19,4
+    location    -19,5
+    location    -19,6
+    location    -19,7
+    location    -19,8
+    location    -18,8
+    location    -17,8
+    location    -14,8
+    location    -13,8
+    location    -12,8
+    location    -12,7
+    location    -12,6
+    location    -12,5
+    location    -12,4
+    location    -12,3
+    location    -12,2
+    location    -12,1
+    location    -13,1
+    location    -14,1
+    location    -17,1
+    location    -18,1
+    flag        SOLID
+}
+
+object {
+    texture     objects_filing_cabinet
+    location    21,1
+    location    21,2
+    location    21,3
+    location    21,4
+    location    21,5
+    location    21,6
+    location    21,7
+    location    21,8
+    location    22,8
+    location    23,8
+    location    26,8
+    location    27,8
+    location    28,8
+    location    28,7
+    location    28,6
+    location    28,5
+    location    28,4
+    location    28,3
+    location    28,2
+    location    28,1
+    location    27,1
+    location    26,1
+    location    23,1
+    location    22,1
+    location    -17,41
+    location    -18,41
+    location    -19,41
+    location    -19,42
+    location    -19,43
+    location    -19,44
+    location    -19,45
+    location    -19,46
+    location    -19,47
+    location    -19,48
+    location    -18,48
+    location    -17,48
+    location    -14,48
+    location    -13,48
+    location    -12,48
+    location    -12,47
+    location    -12,46
+    location    -12,45
+    location    -12,44
+    location    -12,43
+    location    -12,42
+    location    -12,41
+    location    -13,41
+    location    -14,41
+    flag        SOLID
+}
+
+object {
+    texture     objects_document_stack_1
+    location    -16+1/2,6+1/2
+    location    -18+7/10,6+7/10
+    location    22+1/3,6+3/5
+    location    26+1/3,3+1/5
+    location    24+1/3,44+3/5
+    location    -18+2/3,45+4/5
+    location    -15+3/10,42+2/5
+    location    -17+1/5,46+2/5
+}
+
+object {
+    texture     objects_document_stack_1
+    location    -17+1/8,5+3/8
+    location    25+3/5,5+1/10
+    location    24+4/5,4+9/10
+    location    26+1/2,6+2/5
+    location    22+9/10,42+4/5
+    location    25+9/10,43+1/2
+    location    -17+1/10,43+2/5
+    location    -17+9/10,44+9/10
+    rotation    90
+}
+
+object {
+    texture objects_document_stack_2
+    location    -15+3/4,3+3/4
+    location    -15+2/5,2+1/10
+    location    -15+2/5,6+3/10
+    location    22+1/3,3+1/2
+    location    23+3/5,42+9/10
+    location    25+7/10,46+1/10
+    location    -15+4/5,42+9/10
+}
+
+object {
+    texture objects_document_stack_2
+    location    -14+5/8,4+7/9
+    location    -17+7/10,3+3/5
+    location    22+4/5,5
+    location    25+9/10,2+3/5
+    location    22+2/5,44+2/5
+    location    25+7/10,44+3/5
+    location    -16+7/10,43+7/9
+    rotation    90
+}
+
+object {
+    texture     objects_document_stack_2
+    location    -18+7/8,3+1/9
+    location    -16+2/5,4+9/10
+    location    24+1/5,3+1/3
+    location    24+4/5,6+3/5
+    location    23+1/5,45+9/10
+    location    24+1/2,46+1/2
+    location    24+7/10,42+1/3
+    location    -15+9/10,45+3/5
+    rotation    270
+}
+
+object {
+    texture     objects_filing_cabinet
+    rotation    180
+    location    21,41
+    location    21,42
+    location    21,43
+    location    21,44
+    location    21,45
+    location    21,46
+    location    21,47
+    location    21,48
+    location    22,48
+    location    23,48
+    location    26,48
+    location    27,48
+    location    28,48
+    location    28,47
+    location    28,46
+    location    28,45
+    location    28,44
+    location    28,43
+    location    28,42
+    location    28,41
+    location    27,41
+    location    26,41
+    location    23,41
+    location    22,41
+    flag        SOLID
+}
+
+object {
+    texture     objects_microrug_2_2
+    size        3,3
+    location    3,42
+}
+
+object {
+    texture     objects_microdesk
+    size        3,3
+    location    3,43
+    flag        SOLID
+}
+
+object {
+    texture     objects_desk_1
+    location    -15,15
+    location    -14,15
+    location    -13,15
+    location    -12,15
+    location    -11,15
+    location    -10,15
+    location    -9,15
+    location    -8,15
+    location    -7,15
+    location    -6,15
+    location    -5,15
+    location    -4,15
+    location    -3,15
+    location    -2,15
+    location    -1,15
+    location    0,15
+    location    1,15
+    location    2,15
+    location    3,15
+    location    4,15
+    location    5,15
+    location    6,15
+    location    7,15
+    location    8,15
+    location    9,15
+    location    10,15
+    location    11,15
+    location    12,15
+    location    13,15
+    location    14,15
+    location    15,15
+    location    16,15
+    location    17,15
+    location    18,15
+    location    19,15
+    location    20,15
+    location    21,15
+    location    22,15
+    location    23,15
+    location    24,15
+    location    -15,19
+    location    -14,19
+    location    -13,19
+    location    -12,19
+    location    -11,19
+    location    -10,19
+    location    -9,19
+    location    -8,19
+    location    -7,19
+    location    -6,19
+    location    -5,19
+    location    -4,19
+    location    -3,19
+    location    -2,19
+    location    -1,19
+    location    0,19
+    location    1,19
+    location    2,19
+    location    3,19
+    location    4,19
+    location    5,19
+    location    6,19
+    location    7,19
+    location    8,19
+    location    9,19
+    location    10,19
+    location    11,19
+    location    12,19
+    location    13,19
+    location    14,19
+    location    15,19
+    location    16,19
+    location    17,19
+    location    18,19
+    location    19,19
+    location    20,19
+    location    21,19
+    location    22,19
+    location    23,19
+    location    24,19
+    location    -15,23
+    location    -14,23
+    location    -13,23
+    location    -12,23
+    location    -11,23
+    location    -10,23
+    location    -9,23
+    location    -8,23
+    location    -7,23
+    location    -6,23
+    location    -5,23
+    location    -4,23
+    location    -3,23
+    location    -2,23
+    location    -1,23
+    location    0,23
+    location    1,23
+    location    2,23
+    location    3,23
+    location    4,23
+    location    5,23
+    location    6,23
+    location    7,23
+    location    8,23
+    location    9,23
+    location    10,23
+    location    11,23
+    location    12,23
+    location    13,23
+    location    14,23
+    location    15,23
+    location    16,23
+    location    17,23
+    location    18,23
+    location    19,23
+    location    20,23
+    location    21,23
+    location    22,23
+    location    23,23
+    location    24,23
+    location    -15,27
+    location    -14,27
+    location    -13,27
+    location    -12,27
+    location    -11,27
+    location    -10,27
+    location    -9,27
+    location    -8,27
+    location    -7,27
+    location    -6,27
+    location    -5,27
+    location    -4,27
+    location    -3,27
+    location    -2,27
+    location    -1,27
+    location    0,27
+    location    1,27
+    location    2,27
+    location    3,27
+    location    4,27
+    location    5,27
+    location    6,27
+    location    7,27
+    location    8,27
+    location    9,27
+    location    10,27
+    location    11,27
+    location    12,27
+    location    13,27
+    location    14,27
+    location    15,27
+    location    16,27
+    location    17,27
+    location    18,27
+    location    19,27
+    location    20,27
+    location    21,27
+    location    22,27
+    location    23,27
+    location    24,27
+    location    -15,31
+    location    -14,31
+    location    -13,31
+    location    -12,31
+    location    -11,31
+    location    -10,31
+    location    -9,31
+    location    -8,31
+    location    -7,31
+    location    -6,31
+    location    -5,31
+    location    -4,31
+    location    -3,31
+    location    -2,31
+    location    -1,31
+    location    0,31
+    location    1,31
+    location    2,31
+    location    3,31
+    location    4,31
+    location    5,31
+    location    6,31
+    location    7,31
+    location    8,31
+    location    9,31
+    location    10,31
+    location    11,31
+    location    12,31
+    location    13,31
+    location    14,31
+    location    15,31
+    location    16,31
+    location    17,31
+    location    18,31
+    location    19,31
+    location    20,31
+    location    21,31
+    location    22,31
+    location    23,31
+    location    24,31
+    location    -15,35
+    location    -14,35
+    location    -13,35
+    location    -12,35
+    location    -11,35
+    location    -10,35
+    location    -9,35
+    location    -8,35
+    location    -7,35
+    location    -6,35
+    location    -5,35
+    location    -4,35
+    location    -3,35
+    location    -2,35
+    location    -1,35
+    location    0,35
+    location    1,35
+    location    2,35
+    location    3,35
+    location    4,35
+    location    5,35
+    location    6,35
+    location    7,35
+    location    8,35
+    location    9,35
+    location    10,35
+    location    11,35
+    location    12,35
+    location    13,35
+    location    14,35
+    location    15,35
+    location    16,35
+    location    17,35
+    location    18,35
+    location    19,35
+    location    20,35
+    location    21,35
+    location    22,35
+    location    23,35
+    location    24,35
+
+    flag        SOLID
+}
+
+entity {
+    type        EMPLOYEE
+    location    24+1/2,2
+}
+
+entity {
+    type        EMPLOYEE
+    location    -16+1/2,2
+}
+
+entity {
+    type        EMPLOYEE
+    location    -12,16
+}
+
+entity {
+    type        EMPLOYEE
+    location    -8,16
+}
+
+entity {
+    type        EMPLOYEE
+    location    -4,16
+}
+
+entity {
+    type        EMPLOYEE
+    location    0,16
+}
+
+entity {
+    type        EMPLOYEE
+    location    8,16
+}
+
+entity {
+    type        EMPLOYEE
+    location    12,16
+}
+
+entity {
+    type        EMPLOYEE
+    location    16,16
+}
+
+entity {
+    type        EMPLOYEE
+    location    20,16
+}
+
+entity {
+    type        EMPLOYEE
+    location    -12,20
+}
+
+entity {
+    type        EMPLOYEE
+    location    -8,20
+}
+
+entity {
+    type        EMPLOYEE
+    location    -4,20
+}
+
+entity {
+    type        EMPLOYEE
+    location    0,20
+}
+
+entity {
+    type        EMPLOYEE
+    location    8,20
+}
+
+entity {
+    type        EMPLOYEE
+    location    12,20
+}
+
+entity {
+    type        EMPLOYEE
+    location    16,20
+}
+
+entity {
+    type        EMPLOYEE
+    location    20,20
+}
+
+entity {
+    type        EMPLOYEE
+    location    -12,24
+}
+
+entity {
+    type        EMPLOYEE
+    location    -8,24
+}
+
+entity {
+    type        EMPLOYEE
+    location    -4,24
+}
+
+entity {
+    type        EMPLOYEE
+    location    0,24
+}
+
+entity {
+    type        EMPLOYEE
+    location    8,24
+}
+
+entity {
+    type        EMPLOYEE
+    location    12,24
+}
+
+entity {
+    type        EMPLOYEE
+    location    16,24
+}
+
+entity {
+    type        EMPLOYEE
+    location    20,24
+}
+
+entity {
+    type        EMPLOYEE
+    location    -12,28
+}
+
+entity {
+    type        EMPLOYEE
+    location    -8,28
+}
+
+entity {
+    type        EMPLOYEE
+    location    -4,28
+}
+
+entity {
+    type        EMPLOYEE
+    location    0,28
+}
+
+entity {
+    type        EMPLOYEE
+    location    8,28
+}
+
+entity {
+    type        EMPLOYEE
+    location    12,28
+}
+
+entity {
+    type        EMPLOYEE
+    location    16,28
+}
+
+entity {
+    type        EMPLOYEE
+    location    20,28
+}
+
+entity {
+    type        EMPLOYEE
+    location    -12,32
+}
+
+entity {
+    type        EMPLOYEE
+    location    -8,32
+}
+
+entity {
+    type        EMPLOYEE
+    location    -4,32
+}
+
+entity {
+    type        EMPLOYEE
+    location    0,32
+}
+
+entity {
+    type        EMPLOYEE
+    location    8,32
+}
+
+entity {
+    type        EMPLOYEE
+    location    12,32
+}
+
+entity {
+    type        EMPLOYEE
+    location    16,32
+}
+
+entity {
+    type        EMPLOYEE
+    location    20,32
+}
+
+entity {
+    type        EMPLOYEE
+    location    -16+1/2,47
+}
+
+entity {
+    type        EMPLOYEE
+    location    24+1/2,47
+}
+
+entity {
+    type        CLAYMORE_ROOMBA
+    location    4+1/2,14
+}
+
+entity {
+    type        CLAYMORE_ROOMBA
+    location    4+1/2,18
+}
+
+entity {
+    type        CLAYMORE_ROOMBA
+    location    4+1/2,22
+}
+
+entity {
+    type        CLAYMORE_ROOMBA
+    location    4+1/2,26
+}
+
+entity {
+    type        CLAYMORE_ROOMBA
+    location    4+1/2,30
+}
+
+entity {
+    type        CLAYMORE_ROOMBA
+    location    4+1/2,34
+}

@@ -1,0 +1,37 @@
+room {
+    location        14,17
+    size            4,8
+    wall            walls_white
+    floor           floors_tile
+
+    # Meeting room connection
+    exclude_wall    14,17
+    exclude_wall    15,17
+    exclude_wall    16,17
+    extra_floor     15,17
+    extra_floor     16,17
+    extra_floor     17,17
+    wall_override   walls_white_l_endb,17,17
+
+    # Upper hall connection
+    exclude_wall    14,24
+    exclude_wall    15,24
+    exclude_wall    16,24
+    exclude_wall    17,24
+
+    # Office enterance
+    wall_override   walls_white_l_endt,14,18
+    exclude_wall    14,19
+    exclude_wall    14,20
+    wall_override   walls_white_l_endb,14,21
+    extra_floor     14,18
+    extra_floor     14,19
+    extra_floor     14,20
+    extra_floor     14,21
+
+    # Bill reception enterance
+    exclude_wall    17,19
+    exclude_wall    17,20
+    exclude_wall    17,21
+    exclude_wall    17,22
+}

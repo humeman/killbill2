@@ -1,0 +1,13 @@
+config {
+  name    Test_Loot_Table_Map
+}
+
+chest {
+  texture      a
+  open_texture b
+  location     1,1
+  loot_table   25,SWORD
+  loot_table   25,SPEAR
+  loot_table   25,HEALTH_POTION
+  loot_table   1,AXE
+}

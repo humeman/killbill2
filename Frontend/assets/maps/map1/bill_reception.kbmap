@@ -1,0 +1,50 @@
+room {
+    location        17,17
+    size            7,9
+    wall            walls_white
+    floor           floors_tile
+
+    exclude_wall    17,25
+    exclude_wall    23,17
+    exclude_wall    23,11
+
+    # Meeting room connection
+    exclude_wall    17,17
+    exclude_wall    18,17
+    exclude_wall    19,17
+    exclude_wall    20,17
+    extra_floor     18,17
+    extra_floor     19,17
+    extra_floor     20,17
+
+    # Right hallway enterance
+    wall_override   walls_white_l_endt,17,19
+    exclude_wall    17,20
+    exclude_wall    17,21
+    wall_override   walls_white_l_endb,17,22
+    extra_floor     17,19
+    extra_floor     17,20
+    extra_floor     17,21
+    extra_floor     17,22
+
+    # Office enterance
+    wall_override   walls_white_t,23,25
+    exclude_wall    23,23
+    exclude_wall    23,24
+    wall_override   walls_white_l_endt,23,22
+    extra_floor     23,22
+    extra_floor     23,23
+    extra_floor     23,24
+}
+
+
+object location=20+1/2,20 size=2,2 texture=objects_microrug_2_2
+object flag=solid location=20,19 size=1,4 texture=objects_blue_desk_4_1
+object location=21,20+1/2 size=1,1 texture=objects_chair_red_r
+entity type=EMPLOYEE location=21,20+1/2 rotation=90
+entity type=CLAYMORE_ROOMBA location=18,24 rotation=45
+object flag=solid location=20,18 texture=objects_floor_plant_3
+object flag=solid location=22,18 texture=objects_floor_plant_4
+object location=20-5/8,21-1/8 size=3/2,1/4 rotation=90 texture=objects_monitor_3_2_1_4
+object location=20+3/16,20+3/8 size=3/4,3/8 texture=objects_keyboard_3_4_3_8 rotation=90
+object location=20+6/16,21 size=3/8,1/2 rotation=90 texture=objects_mouse_3_8_1_2

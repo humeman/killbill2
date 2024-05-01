@@ -1,0 +1,77 @@
+room {
+    location        0,9
+    size            15,6
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    1,9
+    exclude_wall    2,9
+    exclude_wall    3,9
+    exclude_wall    4,9
+    exclude_wall    5,9
+    exclude_wall    6,9
+    exclude_wall    0,11
+    exclude_wall    0,12
+    wall_override   walls_white_3_trb,0,9
+    wall_override   walls_white_tr,0,10
+    wall_override   walls_white_br,0,13
+    extra_floor     0,10
+    extra_floor     0,11
+    extra_floor     0,12
+
+    # Top exit to Office #1
+    exclude_wall    2,14
+    exclude_wall    3,14
+    wall_override   walls_white_b_endl,1,14
+    wall_override   walls_white_b_endr,4,14
+    extra_floor     1,14
+    extra_floor     2,14
+    extra_floor     3,14
+    extra_floor     4,14
+
+    wall_override   walls_white_3_trb,0,14
+    wall_override   walls_white_3_ltb,14,9
+}
+
+# Couch
+object location=11,11+1/2 size=2,2 texture=objects_microrug_2_2
+object flag=SOLID location=9+9/16,13+3/16 size=1,1 texture=objects_microdesk
+object flag=SOLID location=10+1/2,13+3/16 size=3,1 texture=objects_couch_t_3
+object flag=SOLID location=11,10 size=2,1 texture=objects_blue_desk_2_1_t
+object location=11+3/16,10+1/2 size=3/2,1/4 texture=objects_monitor_3_2_1_4 rotation=180
+
+# Vending/Briefcase
+chest {
+    location        5,13+1/4
+    size            1,1 
+    texture         objects_vending_machine_t 
+    open_texture    objects_vending_machine_t_open
+    loot_table      1,HEALTH_POTION
+    loot_table      1,STRENGTH_POTION
+    loot_table      1,SPEED_POTION
+    flag            SOLID
+}
+object flag=SOLID location=7,13+2/16 size=2,1 texture=objects_blue_desk_2_1_t
+chest {
+    location        7+7/16,13+5/16
+    size            1,1 
+    texture         objects_briefcase_t 
+    open_texture    objects_briefcase_t_open
+    loot_table      5,SPEAR
+    loot_table      5,AXE
+    loot_table      5,SWORD
+    loot_table      5,HAMMER
+    loot_table      3,PLUSHIE
+    loot_table      2,PENGUIN_LAUNCHER
+}
+
+# Plants
+object flag=solid location=1,13 texture=objects_floor_plant_3
+object flag=solid location=1,10 texture=objects_floor_plant_3
+object flag=solid location=10,10 texture=objects_floor_plant_4
+object flag=solid location=13,10 texture=objects_floor_plant_4
+
+# Table
+object flag=solid location=7,10 texture=objects_microdesk
+object location=6,10 texture=objects_chair_red_l
+object location=8,10 texture=objects_chair_red_r
+entity type=EMPLOYEE location=8,10 rotation=90

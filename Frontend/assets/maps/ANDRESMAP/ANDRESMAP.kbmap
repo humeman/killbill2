@@ -1,0 +1,1055 @@
+# THIS IS MY MAP
+# Author: alopez
+
+config {
+    name    TOO_BIG_TO_FEEL
+}
+
+#OUTER WALL
+room {
+    location        -32,-9
+    size            114,68
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    10,-9
+    exclude_wall    11,-9
+    exclude_wall    12,-9
+    exclude_wall    13,-9
+    exclude_wall    14,-9
+    exclude_wall    15,-9
+    exclude_wall    16,-9
+    exclude_wall    17,-9
+    exclude_wall    18,-9
+    exclude_wall    19,-9
+    exclude_wall    20,-9
+    exclude_wall    21,-9
+    exclude_wall    22,-9
+    exclude_wall    23,-9
+    exclude_wall    24,-9
+    exclude_wall    25,-9
+    exclude_wall    26,-9
+    exclude_wall    27,-9
+    exclude_wall    28,-9
+    exclude_wall    29,-9
+    exclude_wall    30,-9
+    exclude_wall    31,-9
+    exclude_wall    32,-9
+    exclude_wall    33,-9
+    exclude_wall    34,-9
+    exclude_wall    35,-9
+    exclude_wall    36,-9
+    exclude_wall    37,-9
+    exclude_wall    38,-9
+    exclude_wall    39,-9
+    exclude_wall    10,58
+    exclude_wall    11,58
+    exclude_wall    12,58
+    exclude_wall    13,58
+    exclude_wall    14,58
+    exclude_wall    15,58
+    exclude_wall    16,58
+    exclude_wall    17,58
+    exclude_wall    18,58
+    exclude_wall    19,58
+    exclude_wall    20,58
+    exclude_wall    21,58
+    exclude_wall    22,58
+    exclude_wall    23,58
+    exclude_wall    24,58
+    exclude_wall    25,58
+    exclude_wall    26,58
+    exclude_wall    27,58
+    exclude_wall    28,58
+    exclude_wall    29,58
+    exclude_wall    30,58
+    exclude_wall    31,58
+    exclude_wall    32,58
+    exclude_wall    33,58
+    exclude_wall    34,58
+    exclude_wall    35,58
+    exclude_wall    36,58
+    exclude_wall    37,58
+    exclude_wall    38,58
+    exclude_wall    39,58
+}
+
+#INNER OUTER WALL
+room {
+    location        -27,-6
+    size            104,62
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    10,-6
+    exclude_wall    11,-6
+    exclude_wall    12,-6
+    exclude_wall    13,-6
+    exclude_wall    14,-6
+    exclude_wall    15,-6
+    exclude_wall    16,-6
+    exclude_wall    17,-6
+    exclude_wall    18,-6
+    exclude_wall    19,-6
+    exclude_wall    20,-6
+    exclude_wall    21,-6
+    exclude_wall    22,-6
+    exclude_wall    23,-6
+    exclude_wall    24,-6
+    exclude_wall    25,-6
+    exclude_wall    26,-6
+    exclude_wall    27,-6
+    exclude_wall    28,-6
+    exclude_wall    29,-6
+    exclude_wall    30,-6
+    exclude_wall    31,-6
+    exclude_wall    32,-6
+    exclude_wall    33,-6
+    exclude_wall    34,-6
+    exclude_wall    35,-6
+    exclude_wall    36,-6
+    exclude_wall    37,-6
+    exclude_wall    38,-6
+    exclude_wall    39,-6
+    exclude_wall    10,55
+    exclude_wall    11,55
+    exclude_wall    12,55
+    exclude_wall    13,55
+    exclude_wall    14,55
+    exclude_wall    15,55
+    exclude_wall    16,55
+    exclude_wall    17,55
+    exclude_wall    18,55
+    exclude_wall    19,55
+    exclude_wall    20,55
+    exclude_wall    21,55
+    exclude_wall    22,55
+    exclude_wall    23,55
+    exclude_wall    24,55
+    exclude_wall    25,55
+    exclude_wall    26,55
+    exclude_wall    27,55
+    exclude_wall    28,55
+    exclude_wall    29,55
+    exclude_wall    30,55
+    exclude_wall    31,55
+    exclude_wall    32,55
+    exclude_wall    33,55
+    exclude_wall    34,55
+    exclude_wall    35,55
+    exclude_wall    36,55
+    exclude_wall    37,55
+    exclude_wall    38,55
+    exclude_wall    39,55
+    wall_override   walls_white_b,-27,-6
+    wall_override   walls_white_b,76,55
+}
+
+#MAIN ROOM
+room {
+    location        0,0
+    size            50,50
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    10,0
+    exclude_wall    11,0
+    exclude_wall    12,0
+    exclude_wall    13,0
+    exclude_wall    14,0
+    exclude_wall    15,0
+    exclude_wall    16,0
+    exclude_wall    17,0
+    exclude_wall    18,0
+    exclude_wall    19,0
+    exclude_wall    20,0
+    exclude_wall    21,0
+    exclude_wall    22,0
+    exclude_wall    23,0
+    exclude_wall    24,0
+    exclude_wall    25,0
+    exclude_wall    26,0
+    exclude_wall    27,0
+    exclude_wall    28,0
+    exclude_wall    29,0
+    exclude_wall    30,0
+    exclude_wall    31,0
+    exclude_wall    32,0
+    exclude_wall    33,0
+    exclude_wall    34,0
+    exclude_wall    35,0
+    exclude_wall    36,0
+    exclude_wall    37,0
+    exclude_wall    38,0
+    exclude_wall    39,0
+    exclude_wall    49,10
+    exclude_wall    49,11
+    exclude_wall    49,12
+    exclude_wall    49,13
+    exclude_wall    49,14
+    exclude_wall    49,15
+    exclude_wall    49,16
+    exclude_wall    49,17
+    exclude_wall    49,18
+    exclude_wall    49,19
+    exclude_wall    49,20
+    exclude_wall    49,21
+    exclude_wall    49,22
+    exclude_wall    49,23
+    exclude_wall    49,24
+    exclude_wall    49,25
+    exclude_wall    49,26
+    exclude_wall    49,27
+    exclude_wall    49,28
+    exclude_wall    49,29
+    exclude_wall    49,30
+    exclude_wall    49,31
+    exclude_wall    49,32
+    exclude_wall    49,33
+    exclude_wall    49,34
+    exclude_wall    49,35
+    exclude_wall    49,36
+    exclude_wall    49,37
+    exclude_wall    49,38
+    exclude_wall    49,39
+    exclude_wall    49,10
+    exclude_wall    39,49
+    exclude_wall    38,49
+    exclude_wall    37,49
+    exclude_wall    36,49
+    exclude_wall    35,49
+    exclude_wall    34,49
+    exclude_wall    33,49
+    exclude_wall    32,49
+    exclude_wall    31,49
+    exclude_wall    30,49
+    exclude_wall    29,49
+    exclude_wall    28,49
+    exclude_wall    27,49
+    exclude_wall    26,49
+    exclude_wall    25,49
+    exclude_wall    24,49
+    exclude_wall    23,49
+    exclude_wall    22,49
+    exclude_wall    21,49
+    exclude_wall    20,49
+    exclude_wall    19,49
+    exclude_wall    18,49
+    exclude_wall    17,49
+    exclude_wall    16,49
+    exclude_wall    15,49
+    exclude_wall    14,49
+    exclude_wall    13,49
+    exclude_wall    12,49
+    exclude_wall    11,49
+    exclude_wall    10,49
+    exclude_wall    0,10
+    exclude_wall    0,11
+    exclude_wall    0,12
+    exclude_wall    0,13
+    exclude_wall    0,14
+    exclude_wall    0,15
+    exclude_wall    0,16
+    exclude_wall    0,17
+    exclude_wall    0,18
+    exclude_wall    0,19
+    exclude_wall    0,20
+    exclude_wall    0,21
+    exclude_wall    0,22
+    exclude_wall    0,23
+    exclude_wall    0,24
+    exclude_wall    0,25
+    exclude_wall    0,26
+    exclude_wall    0,27
+    exclude_wall    0,28
+    exclude_wall    0,29
+    exclude_wall    0,30
+    exclude_wall    0,31
+    exclude_wall    0,32
+    exclude_wall    0,33
+    exclude_wall    0,34
+    exclude_wall    0,35
+    exclude_wall    0,36
+    exclude_wall    0,37
+    exclude_wall    0,38
+    exclude_wall    0,39
+}
+
+#LEFT AND RIGHT DIVOT
+room {
+    location        -25,9
+    size            100,32
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    1,9
+    exclude_wall    2,9
+    exclude_wall    3,9
+    exclude_wall    4,9
+    exclude_wall    5,9
+    exclude_wall    6,9
+    exclude_wall    7,9
+    exclude_wall    8,9
+    exclude_wall    9,9
+    exclude_wall    10,9
+    exclude_wall    11,9
+    exclude_wall    12,9
+    exclude_wall    13,9
+    exclude_wall    14,9
+    exclude_wall    15,9
+    exclude_wall    16,9
+    exclude_wall    17,9
+    exclude_wall    18,9
+    exclude_wall    19,9
+    exclude_wall    20,9
+    exclude_wall    21,9
+    exclude_wall    22,9
+    exclude_wall    23,9
+    exclude_wall    24,9
+    exclude_wall    25,9
+    exclude_wall    26,9
+    exclude_wall    27,9
+    exclude_wall    28,9
+    exclude_wall    29,9
+    exclude_wall    30,9
+    exclude_wall    31,9
+    exclude_wall    32,9
+    exclude_wall    33,9
+    exclude_wall    34,9
+    exclude_wall    35,9
+    exclude_wall    36,9
+    exclude_wall    37,9
+    exclude_wall    38,9
+    exclude_wall    39,9
+    exclude_wall    40,9
+    exclude_wall    41,9
+    exclude_wall    42,9
+    exclude_wall    43,9
+    exclude_wall    44,9
+    exclude_wall    45,9
+    exclude_wall    46,9
+    exclude_wall    47,9
+    exclude_wall    48,9
+    exclude_wall    1,40
+    exclude_wall    2,40
+    exclude_wall    3,40
+    exclude_wall    4,40
+    exclude_wall    5,40
+    exclude_wall    6,40
+    exclude_wall    7,40
+    exclude_wall    8,40
+    exclude_wall    9,40
+    exclude_wall    10,40
+    exclude_wall    11,40
+    exclude_wall    12,40
+    exclude_wall    13,40
+    exclude_wall    14,40
+    exclude_wall    15,40
+    exclude_wall    16,40
+    exclude_wall    17,40
+    exclude_wall    18,40
+    exclude_wall    19,40
+    exclude_wall    20,40
+    exclude_wall    21,40
+    exclude_wall    22,40
+    exclude_wall    23,40
+    exclude_wall    24,40
+    exclude_wall    25,40
+    exclude_wall    26,40
+    exclude_wall    27,40
+    exclude_wall    28,40
+    exclude_wall    29,40
+    exclude_wall    30,40
+    exclude_wall    31,40
+    exclude_wall    32,40
+    exclude_wall    33,40
+    exclude_wall    34,40
+    exclude_wall    35,40
+    exclude_wall    36,40
+    exclude_wall    37,40
+    exclude_wall    38,40
+    exclude_wall    39,40
+    exclude_wall    40,40
+    exclude_wall    41,40
+    exclude_wall    42,40
+    exclude_wall    43,40
+    exclude_wall    44,40
+    exclude_wall    45,40
+    exclude_wall    46,40
+    exclude_wall    47,40
+    exclude_wall    48,40
+    wall_override   walls_white_b,-25,9
+    wall_override   walls_white_b,74,40
+}
+
+#UP AND DOWN DIVOT
+room {
+    location        9,-25
+    size            32,100
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    9,1
+    exclude_wall    9,2
+    exclude_wall    9,3
+    exclude_wall    9,4
+    exclude_wall    9,5
+    exclude_wall    9,6
+    exclude_wall    9,7
+    exclude_wall    9,8
+    exclude_wall    9,9
+    exclude_wall    9,10
+    exclude_wall    9,11
+    exclude_wall    9,12
+    exclude_wall    9,13
+    exclude_wall    9,14
+    exclude_wall    9,15
+    exclude_wall    9,16
+    exclude_wall    9,17
+    exclude_wall    9,18
+    exclude_wall    9,19
+    exclude_wall    9,20
+    exclude_wall    9,21
+    exclude_wall    9,22
+    exclude_wall    9,23
+    exclude_wall    9,24
+    exclude_wall    9,25
+    exclude_wall    9,26
+    exclude_wall    9,27
+    exclude_wall    9,28
+    exclude_wall    9,29
+    exclude_wall    9,30
+    exclude_wall    9,31
+    exclude_wall    9,32
+    exclude_wall    9,33
+    exclude_wall    9,34
+    exclude_wall    9,35
+    exclude_wall    9,36
+    exclude_wall    9,37
+    exclude_wall    9,38
+    exclude_wall    9,39
+    exclude_wall    9,40
+    exclude_wall    9,41
+    exclude_wall    9,42
+    exclude_wall    9,43
+    exclude_wall    9,44
+    exclude_wall    9,45
+    exclude_wall    9,46
+    exclude_wall    9,47
+    exclude_wall    9,48
+    exclude_wall    40,1
+    exclude_wall    40,2
+    exclude_wall    40,3
+    exclude_wall    40,4
+    exclude_wall    40,5
+    exclude_wall    40,6
+    exclude_wall    40,7
+    exclude_wall    40,8
+    exclude_wall    40,9
+    exclude_wall    40,10
+    exclude_wall    40,11
+    exclude_wall    40,12
+    exclude_wall    40,13
+    exclude_wall    40,14
+    exclude_wall    40,15
+    exclude_wall    40,16
+    exclude_wall    40,17
+    exclude_wall    40,18
+    exclude_wall    40,19
+    exclude_wall    40,20
+    exclude_wall    40,21
+    exclude_wall    40,22
+    exclude_wall    40,23
+    exclude_wall    40,24
+    exclude_wall    40,25
+    exclude_wall    40,26
+    exclude_wall    40,27
+    exclude_wall    40,28
+    exclude_wall    40,29
+    exclude_wall    40,30
+    exclude_wall    40,31
+    exclude_wall    40,32
+    exclude_wall    40,33
+    exclude_wall    40,34
+    exclude_wall    40,35
+    exclude_wall    40,36
+    exclude_wall    40,37
+    exclude_wall    40,38
+    exclude_wall    40,39
+    exclude_wall    40,40
+    exclude_wall    40,41
+    exclude_wall    40,42
+    exclude_wall    40,43
+    exclude_wall    40,44
+    exclude_wall    40,45
+    exclude_wall    40,46
+    exclude_wall    40,47
+    exclude_wall    40,48
+    exclude_wall    9,-7
+    exclude_wall    9,-8
+    exclude_wall    40,-7
+    exclude_wall    40,-8
+    exclude_wall    9,56
+    exclude_wall    9,57
+    exclude_wall    40,56
+    exclude_wall    40,57
+}
+
+#BOTTOM LEFT SPAWN
+room {
+    location        0,0
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    7,9
+    exclude_wall    8,9
+    exclude_wall    9,9
+    exclude_wall    9,8
+    exclude_wall    9,7
+    wall_override   walls_white_b,0,0
+}
+
+#BOTTOM RIGHT SPAWN
+room {
+    location        40,0
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    40,7
+    exclude_wall    40,8
+    exclude_wall    40,9
+    exclude_wall    41,9
+    exclude_wall    42,9
+    wall_override   walls_white_b,40,0
+    wall_override   walls_white_b,49,9
+}
+
+#TOP RIGHT SPAWN
+room {
+    location        40,40
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    42,40
+    exclude_wall    41,40
+    exclude_wall    40,40
+    exclude_wall    40,41
+    exclude_wall    40,42
+    wall_override   walls_white_b,49,49
+}
+
+#TOP LEFT SPAWN
+room {
+    location        0,40
+    size            10,10
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    9,42
+    exclude_wall    9,41
+    exclude_wall    9,40
+    exclude_wall    8,40
+    exclude_wall    7,40
+    wall_override   walls_white_b,0,40
+    wall_override   walls_white_b,9,49
+}
+
+#BOTTOM CHEST
+chest {
+  texture           objects_briefcase
+  open_texture      objects_briefcase_open
+  location          24+1/2,-24
+  loot_table        50,SWORD
+  loot_table        25,SPEAR
+  loot_table        20,HEALTH_POTION
+  loot_table        5,AXE
+}
+
+#TOP CHEST
+chest {
+  texture           objects_briefcase
+  open_texture      objects_briefcase_open
+  location          24+1/2,73
+  loot_table        50,SWORD
+  loot_table        25,SPEAR
+  loot_table        20,HEALTH_POTION
+  loot_table        5,AXE
+}
+
+#LEFT CHEST
+chest {
+  texture           objects_briefcase
+  open_texture      objects_briefcase_open
+  location          -24,24+1/2
+  loot_table        50,SWORD
+  loot_table        25,SPEAR
+  loot_table        20,HEALTH_POTION
+  loot_table        5,AXE
+}
+
+#RIGHT CHEST
+chest {
+  texture           objects_briefcase
+  open_texture      objects_briefcase_open
+  location          73,24+1/2
+  loot_table        50,SWORD
+  loot_table        25,SPEAR
+  loot_table        20,HEALTH_POTION
+  loot_table        5,AXE
+}
+
+#BOTTOM TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        18,-24
+    location        18,-23
+    location        18,-22
+    location        18,-21
+    location        18,-20
+    location        18,-19
+    location        18,-18
+    location        19,-18
+    location        20,-18
+    location        21,-18
+    location        22,-18
+    location        27,-18
+    location        28,-18
+    location        29,-18
+    location        30,-18
+    location        31,-18
+    location        31,-19
+    location        31,-20
+    location        31,-21
+    location        31,-22
+    location        31,-23
+    location        31,-24
+}
+
+#TOP TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        18,73
+    location        18,72
+    location        18,71
+    location        18,70
+    location        18,69
+    location        18,68
+    location        18,67
+    location        19,67
+    location        20,67
+    location        21,67
+    location        22,67
+    location        27,67
+    location        28,67
+    location        29,67
+    location        30,67
+    location        31,67
+    location        31,68
+    location        31,69
+    location        31,70
+    location        31,71
+    location        31,72
+    location        31,73
+}
+
+#LEFT TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        -24,18
+    location        -23,18
+    location        -22,18
+    location        -21,18
+    location        -20,18
+    location        -19,18
+    location        -18,18
+    location        -18,19
+    location        -18,20
+    location        -18,21
+    location        -18,22
+    location        -18,27
+    location        -18,28
+    location        -18,29
+    location        -18,30
+    location        -18,31
+    location        -19,31
+    location        -20,31
+    location        -21,31
+    location        -22,31
+    location        -23,31
+    location        -24,31
+}
+
+#RIGHT TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        73,18
+    location        72,18
+    location        71,18
+    location        70,18
+    location        69,18
+    location        68,18
+    location        67,18
+    location        67,19
+    location        67,20
+    location        67,21
+    location        67,22
+    location        67,27
+    location        67,28
+    location        67,29
+    location        67,30
+    location        67,31
+    location        68,31
+    location        69,31
+    location        70,31
+    location        71,31
+    location        72,31
+    location        73,31
+}
+
+#BOTTOM LEFT CHEST TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        12,12
+    location        12,13
+    location        12,14
+    location        12,15
+    location        12,16
+    location        12,17
+    location        13,17
+    location        13,12
+    location        14,12
+    location        15,12
+    location        16,12
+    location        17,12
+    location        17,13
+}
+
+#BOTOM LEFT TILE CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          13,13
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#BOTTOM RIGHT CHEST TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        37,12
+    location        37,13
+    location        37,14
+    location        37,15
+    location        37,16
+    location        37,17
+    location        36,17
+    location        36,12
+    location        35,12
+    location        34,12
+    location        33,12
+    location        32,12
+    location        32,13
+}
+
+#BOTOM RIGHT TILE CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          36,13
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#TOP RIGHT CHEST TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        37,37
+    location        37,36
+    location        37,35
+    location        37,34
+    location        37,33
+    location        37,32
+    location        36,32
+    location        36,37
+    location        35,37
+    location        34,37
+    location        33,37
+    location        32,37
+    location        32,36
+}
+
+#TOP RIGHT TILE CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          36,36
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#TOP LEFT CHEST TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        12,37
+    location        12,36
+    location        12,35
+    location        12,34
+    location        12,33
+    location        12,32
+    location        13,32
+    location        13,37
+    location        14,37
+    location        15,37
+    location        16,37
+    location        17,37
+    location        17,36
+}
+
+#TOP LEFT TILE CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          13,36
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#LEFT DIVOT BOTTOM ENTITY
+entity {
+    type            EMPLOYEE
+    location        -9,13+1/2
+}
+
+#LEFT DIVOT TOP ENTITY
+entity {
+    type            EMPLOYEE
+    location        -9,36-1/2
+}
+
+#RIGHT DIVOT BOTTOM ENTITY
+entity {
+    type            EMPLOYEE
+    location        58,13+1/2
+}
+
+#RIGHT DIVOT TOP ENTITY
+entity {
+    type            EMPLOYEE
+    location        58,36-1/2
+}
+
+#BOTTOM DIVOT LEFT ENTITY
+entity {
+    type            EMPLOYEE
+    location        13+1/2,-14+1/2
+}
+
+#BOTTOM DIVOT RIGHT ENTITY
+entity {
+    type            EMPLOYEE
+    location        35+1/2,-14+1/2
+}
+
+#TOP DIVOT RIGHT ENTITY
+entity {
+    type            EMPLOYEE
+    location        35+1/2,62+1/2
+}
+
+#TOP DIVOT LEFT ENTITY
+entity {
+    type            EMPLOYEE
+    location        13+1/2,62+1/2
+}
+
+#TUNNELS LEFT BOTTOM ENTITY
+entity {
+    type            CLAYMORE_ROOMBA
+    location        -28,20
+}
+
+#TUNNELS LEFT TOP ENTITY
+entity {
+    type            CLAYMORE_ROOMBA
+    location        -28,29
+}
+
+#TUNNELS RIGHT BOTTOM ENTITY
+entity {
+    type            CLAYMORE_ROOMBA
+    location        77,20
+}
+
+#TUNNELS RIGHT TOP ENTITY
+entity {
+    type            CLAYMORE_ROOMBA
+    location        77,29
+}
+
+#SPAWN BOTTOM LEFT TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        10,5
+    location        11,5
+    location        12,5
+    location        10,2
+    location        11,2
+    location        12,2
+}
+
+#SPAWN BOTTOM LEFT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          10,3+1/2
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#SPAWN BOTTOM RIGHT TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        39,5
+    location        38,5
+    location        37,5
+    location        39,2
+    location        38,2
+    location        37,2
+}
+
+#SPAWN BOTTOM RIGHT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          39,3+1/2
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#SPAWN TOP RIGHT TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        39,47
+    location        38,47
+    location        37,47
+    location        39,44
+    location        38,44
+    location        37,44
+}
+
+#SPAWN TOP RIGHT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          39,45+1/2
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#SPAWN TOP LEFT TILES
+tile {
+    texture         test_block
+    flag            SOLID
+    location        10,47
+    location        11,47
+    location        12,47
+    location        10,44
+    location        11,44
+    location        12,44
+}
+
+#SPAWN TOP LEFT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          10,45+1/2
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#TUNNELS BOTTOM LEFT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          6,-8
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#TUNNELS BOTTOM RIGHT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          43,-8
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#TUNNELS TOP RIGHT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          43,57
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#TUNNELS TOP LEFT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          6,57
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#TUNNELS CENTER LEFT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          -31,24+1/2
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}
+
+#TUNNELS CENTER RIGHT CHEST
+chest {
+    texture           objects_briefcase
+    open_texture      objects_briefcase_open
+    location          80,24+1/2
+    loot_table        50,SWORD
+    loot_table        25,SPEAR
+    loot_table        20,HEALTH_POTION
+    loot_table        5,AXE
+}

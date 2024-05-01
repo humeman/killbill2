@@ -1,0 +1,14 @@
+-verbose
+-dontwarn com.badlogic.gdx.backends.android.AndroidFragmentApplication
+
+-keep,allowobfuscation,allowshrinking class java.beans.Transient.** {*;}
+-keep,allowobfuscation,allowshrinking class java.beans.ConstructorProperties.** {*;}
+-keep,allowobfuscation,allowshrinking class java.nio.file.Path.** {*;}
+-keep,allowobfuscation,allowshrinking class java.beans.Transient
+-keep,allowobfuscation,allowshrinking class java.beans.ConstructorProperties
+-keep,allowobfuscation,allowshrinking class java.nio.file.Path
+-keep,allowobfuscation,allowshrinking class com.fasterxml.jackson.** {*;}
+-dontwarn java.beans.Transient**
+-dontwarn java.beans.ConstructorProperties**
+-dontwarn java.nio.file.Path**
+-dontwarn java.nio.file.Path**

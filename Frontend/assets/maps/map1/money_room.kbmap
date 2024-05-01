@@ -1,0 +1,40 @@
+room {
+    location        37,11
+    size            9,9
+    wall            walls_white
+    floor           floors_tile
+
+    exclude_wall    37,19
+    exclude_wall    37,11
+
+    # Office connection
+    exclude_wall    37,13
+    exclude_wall    37,14
+    exclude_wall    37,15
+    exclude_wall    37,16
+    exclude_wall    37,17
+}
+
+chest {
+    location        40+9/16,18+3/16
+    size            1,1 
+    texture         objects_display_case_ram
+    open_texture    objects_display_case
+    loot_table      1,RAM_LAUNCHER
+}
+chest {
+    location        41+7/16,18+3/16
+    size            1,1 
+    texture         objects_display_case_wand
+    open_texture    objects_display_case
+    loot_table      1,SUMMONING_WAND
+}
+
+object flag=solid size=2,2 location=43,12 texture=objects_money_bag_1 rotation=90
+object flag=solid size=2,2 location=41+1/2,12 texture=objects_money_bag_1 rotation=60
+object flag=solid size=2,2 location=42+1/2,14 texture=objects_money_bag_2 rotation=30
+object flag=solid size=2,2 location=38,12 texture=objects_money_bag_2 rotation=120
+object flag=solid size=2,2 location=38,17 texture=objects_money_bag_2 rotation=290
+object flag=solid size=2,2 location=43,17+3/16 texture=objects_money_bag_1 rotation=220
+entity type=CLAYMORE_ROOMBA rotation=270 location=36,17
+entity type=CLAYMORE_ROOMBA rotation=270 location=36,13

@@ -1,0 +1,37 @@
+room {
+    location        -9,10
+    size            10,4
+    wall            walls_white
+    floor           floors_tile
+    exclude_wall    0,10
+    exclude_wall    0,11
+    exclude_wall    0,12
+    exclude_wall    0,13
+
+    # Bottom enterance (to Office #2)
+    exclude_wall    -6,10
+    exclude_wall    -5,10
+    extra_floor     -7,10
+    extra_floor     -6,10
+    extra_floor     -5,10
+    extra_floor     -4,10
+    wall_override   walls_white_b_endl,-7,10
+    wall_override   walls_white_b_endr,-4,10
+
+    # Top enterance (to server room)
+    exclude_wall    -6,13
+    exclude_wall    -5,13
+    extra_floor     -7,13
+    extra_floor     -6,13
+    extra_floor     -5,13
+    extra_floor     -4,13
+    wall_override   walls_white_b_endl,-7,13
+    wall_override   walls_white_b_endr,-4,13
+
+    wall_override   walls_white_3_lrb,-9,13
+    wall_override   walls_white_3_trb,-9,10
+}
+
+# Plants
+object flag=solid location=-8,11 texture=objects_floor_plant_3
+object flag=solid location=-8,12 texture=objects_floor_plant_4

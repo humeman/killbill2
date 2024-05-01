@@ -1,0 +1,49 @@
+{
+    "type": "BASIC",
+    "basicConfig": {
+        "playerConfig": {
+            "PLAYER": [
+                {
+                    "id": 0,
+                    "spawnpoint": [4, 4],
+                    "texturePrefix": "",
+                    "maxHealth": 10
+                },
+                {
+                    "id": 1,
+                    "spawnpoint": [45, 4],
+                    "texturePrefix": "",
+                    "maxHealth": 10
+                },
+                {
+                    "id": 2,
+                    "spawnpoint": [45, 45],
+                    "texturePrefix": "",
+                    "maxHealth": 10
+                },
+                {
+                    "id": 3,
+                    "spawnpoint": [4, 45],
+                    "texturePrefix": "",
+                    "maxHealth": 10
+                }
+            ],
+            "BILL": [
+                {
+                    "id": 0,
+                    "spawnpoint": [24.5, 24.5],
+                    "texturePrefix": "",
+                    "maxHealth": 20
+                }
+            ],
+            "SPECTATOR": [
+                {
+                    "id": 0,
+                    "spawnpoint": [24.5, 24.5],
+                    "texturePrefix": "",
+                    "maxHealth": -1
+                }
+            ]
+        }
+    }
+}

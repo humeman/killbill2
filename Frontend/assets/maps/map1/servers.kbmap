@@ -1,0 +1,45 @@
+room {
+    location        -12,13
+    size            13,15
+    wall            walls_white
+    floor           floors_tile
+
+    exclude_wall    0,14
+    exclude_wall    -9,13
+    exclude_wall    -7,13
+    exclude_wall    -6,13
+    exclude_wall    -5,13
+    exclude_wall    -4,13
+
+    # Upper hallway
+    wall_override   walls_white_tl,0,24
+    wall_override   walls_white_t,0,27
+    exclude_wall    0,25
+    exclude_wall    0,26
+    extra_floor     0,25
+    extra_floor     0,26
+}
+
+object texture=objects_server_b location=-10,15 size=1,5 flag=solid
+object texture=objects_server_wires location=-10-5/16,15+3/16 size=6/16,5
+object texture=objects_server_b location=-8,15 size=1,5 flag=solid
+object texture=objects_server_wires location=-8-5/16,15+3/16 size=6/16,5
+object texture=objects_server_b location=-4,15 size=1,5 flag=solid
+object texture=objects_server_wires location=-4-5/16,15+3/16 size=6/16,5
+object texture=objects_server_b location=-2,15 size=1,5 flag=solid
+object texture=objects_server_wires location=-2-5/16,15+3/16 size=6/16,5
+
+object texture=objects_server_t location=-10,21 size=1,5 flag=solid
+object texture=objects_server_wires location=-10-5/16,21 size=6/16,5
+object texture=objects_server_t location=-8,21 size=1,5 flag=solid
+object texture=objects_server_wires location=-8-5/16,21 size=6/16,5
+object texture=objects_server_t location=-4,21 size=1,5 flag=solid
+object texture=objects_server_wires location=-4-5/16,21 size=6/16,5
+object texture=objects_server_t location=-2,21 size=1,5 flag=solid
+object texture=objects_server_wires location=-2-5/16,21 size=6/16,5
+
+entity type=CLAYMORE_ROOMBA location=-11,14 rotation=90
+entity type=CLAYMORE_ROOMBA location=-1,14 rotation=270
+entity type=EMPLOYEE location=-9,23 rotation=180
+entity type=EMPLOYEE location=-3,17 rotation=180
+object location=-9-2/16,25+3/8 size=1,3/4 rotation=15 texture=objects_laptop

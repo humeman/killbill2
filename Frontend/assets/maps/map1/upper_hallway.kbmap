@@ -1,0 +1,36 @@
+room {
+    location        0,24
+    size            18,4
+    wall            walls_white
+    floor           floors_tile
+
+    wall_override   walls_white_3_trb,17,25
+
+    # Server room enterance
+    exclude_wall    0,24
+    exclude_wall    0,25
+    exclude_wall    0,26
+    exclude_wall    0,27
+
+    # Office enterance
+    exclude_wall    5,24
+    exclude_wall    6,24
+    exclude_wall    7,24
+    exclude_wall    8,24
+    exclude_wall    9,24
+
+    # Right hall connection
+    wall_override   walls_white_tr,14,24
+    exclude_wall    15,24
+    exclude_wall    16,24
+    wall_override   walls_white_r,17,24
+    extra_floor     14,24
+    extra_floor     15,24
+    extra_floor     16,24
+    extra_floor     17,24
+}
+
+
+object flag=solid location=16,26 texture=objects_floor_plant_4
+object flag=solid location=7+3/8,26-1/8 texture=objects_water_splash size=3/4,3/4
+object flag=solid location=7+1/8,26+3/8 texture=objects_water_fountain size=3/4,3/4

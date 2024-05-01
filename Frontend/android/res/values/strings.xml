@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Kill Bill 2</string>
+    <string-array name = "friends">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name = "games">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>

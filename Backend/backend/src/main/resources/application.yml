@@ -1,0 +1,13 @@
+env_vars:
+  mysql_user: "${MYSQL_USER}"
+  mysql_host: "${MYSQL_HOST}"
+  mysql_pass: "${MYSQL_PASS}"
+  mysql_db: "${MYSQL_DB}"
+  admin_init_key: "${ADMIN_INIT_KEY}"
+  key_expiration_seconds: "${KEY_EXPIRATION_SECONDS}"
+  udp_port: "${UDP_PORT}"
+  udp_host: "${UDP_HOST}"
+  server_key: "${SERVER_KEY}"
+  version: "${VERSION}"
+server:
+  port: "${PORT}"
