@@ -83,7 +83,7 @@ public class UserScreen extends MenuScreen {
             .setFontBuilder(
                 KillBillGame.get().getFontLoader().newBuilder("main")
                 .setColor(GlobalGameConfig.PRIMARY_COLOR.cpy())
-                .setScaledSize(72)
+                .setScaledSize(52)
             )
             .build();
 

@@ -224,4 +224,30 @@ public class InventoryDisplay extends RendererExtension {
 
         super.resize();
     }
+
+    @Override
+    public boolean runClick(final float clickX, final float clickY) {
+        // See if this is within the bounds of the inventory items
+        int slotWidth = KillBillGame.get().getWidth() / 20;
+        int spacing = KillBillGame.get().getWidth() / 200;
+
+        int x = (KillBillGame.get().getWidth() - (slotWidth) * GlobalGameConfig.INVENTORY_SIZE) / 2;
+
+        for (int i = 0; i < GlobalGameConfig.INVENTORY_SIZE; i++) {
+            if (clickX >= x && clickX < x + slotWidth && clickY >= spacing && clickY < spacing + slotWidth) {
+                // Clicked!
+                if (player.getHeldItemIndex() == i) {
+                    // Double click = drop
+                    player.drop();
+                } else {
+                    player.setHeldItem(i);
+                }
+                return true;
+            }
+
+            x += slotWidth;
+        }
+
+        return super.runClick(clickX, clickY);
+    }
 }

@@ -171,8 +171,6 @@ public class UdpGameScreen extends GameScreen {
         entities = new ArrayList<>();
         initialized = true;
         leaving = false;
-        paused = false;
-        dead = false;
     }
 
     public boolean isPaused() {
@@ -408,8 +406,8 @@ public class UdpGameScreen extends GameScreen {
         player = new Player(
             0, 
             0, 
-            1, 
-            1, 
+            0.95f, 
+            0.95f, 
             userState
         );
         KillBillGame.get().setPlayer(player);
@@ -437,6 +435,18 @@ public class UdpGameScreen extends GameScreen {
 
         loadMap();
 
+        if (paused) unpause();
+        if (dead) {
+            for (final UiElement e : dieElements) {
+                e.setVisible(false);
+            }
+            dead = false;
+
+            if (KillBillGame.get().getPlatform().equals(Platform.ANDROID)) {
+                touchInputDisplay.setEnabled(true);
+            }
+        }
+
         KillBillGame.get().getUdpClient().setCallback(MessageDataType.COMMAND_RECV_GAME_STATE, msg -> { updateGameState(); });
         KillBillGame.get().getUdpClient().setCallback(MessageDataType.RESP_GET_GAME_STATE, msg -> { updateGameState(); });
         KillBillGame.get().getUdpClient().setCallback(MessageDataType.COMMAND_RECV_ENTITY_STATE, msg -> { updateEntities(); });
@@ -450,8 +460,6 @@ public class UdpGameScreen extends GameScreen {
         KillBillGame.get().getUdpClient().setCallback(MessageDataType.COMMAND_RECV_BOMB, this::recvBomb);
         KillBillGame.get().getUdpClient().setCallback(MessageDataType.COMMAND_RECV_PROJECTILE, this::recvProjectile);
         updateGameState();
-
-        if (paused) unpause();
 
         // Request all our state now that we're ready
         try {
@@ -633,7 +641,7 @@ public class UdpGameScreen extends GameScreen {
         if (!initialized) throw new IllegalStateException("Map is not initialized.");
 
         // Empty it out
-        gameRenderer.getObjects().clear();
+        gameRenderer.clearObjects();
 
         // Grab our map
         final KillBillMap map = MapLoader.load(List.of(new ByteArrayInputStream(gameState.getGame().map().getBytes())));

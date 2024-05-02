@@ -23,7 +23,7 @@ public class DesktopLauncher {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 		config.setForegroundFPS(60);
 		config.setResizable(true);
-		config.setTitle("Kill Bill 21");
+		config.setTitle("Kill Bill 2");
 
 		// "http://192.3.113.200:8080"
 		NativeHttpClient httpClient = new DesktopNativeHttpClient("http://207.244.252.28:31218");

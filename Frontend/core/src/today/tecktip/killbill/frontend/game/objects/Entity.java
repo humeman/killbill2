@@ -47,6 +47,8 @@ public class Entity extends GameObject {
 
     private boolean movedLastFrame;
 
+    private GameObject collidedObject;
+
     /**
      * Constructs a new Entity (a movable, non-grid object like a player or enemy).
      * <p>
@@ -206,16 +208,19 @@ public class Entity extends GameObject {
         }
 
         // Check other objects on the screen
-        GameObject collidedObject = null;
-        for (final GameObject object : ((GameScreen) KillBillGame.get().getScreen()).getGameRenderer().getObjects()) {
-            if (object == this) continue;
-            if (object.hasFlag(ObjectFlag.SOLID) && wouldCollideAt(object, getRectangle().getX() + xOffset, getRectangle().getY())) {
-                // We are colliding with something.
-                collidedObject = object;
-                break;
+        collidedObject = null;
+        GameScreen currentScreen = (GameScreen) KillBillGame.get().getScreen();
+        currentScreen.getGameRenderer().forEachObject(
+            object -> {
+                if (object == this) return false;
+                if (object.hasFlag(ObjectFlag.SOLID) && wouldCollideAt(object, getRectangle().getX() + xOffset, getRectangle().getY())) {
+                    // We are colliding with something.
+                    collidedObject = object;
+                    return true;
+                }
+                return false;
             }
-        }
-
+        );
         if (collidedObject != null) {
             // We need to move in a particular step size towards the other object.
             // No object can be half a pixel, so the step size is 1.
@@ -255,15 +260,19 @@ public class Entity extends GameObject {
         }
 
         // Check other objects on the screen
-        GameObject collidedObject = null;
-        for (final GameObject object : ((GameScreen) KillBillGame.get().getScreen()).getGameRenderer().getObjects()) {
-            if (object == this) continue;
-            if (object.hasFlag(ObjectFlag.SOLID) && wouldCollideAt(object, getRectangle().getX(), getRectangle().getY() + yOffset)) {
-                // We are colliding with something.
-                collidedObject = object;
-                break;
+        collidedObject = null;
+        GameScreen currentScreen = (GameScreen) KillBillGame.get().getScreen();
+        currentScreen.getGameRenderer().forEachObject(
+            object -> {
+                if (object == this) return false;
+                if (object.hasFlag(ObjectFlag.SOLID) && wouldCollideAt(object, getRectangle().getX(), getRectangle().getY() + yOffset)) {
+                    // We are colliding with something.
+                    collidedObject = object;
+                    return true;
+                }
+                return false;
             }
-        }
+        );
 
         if (collidedObject != null) {
             // We need to move in a particular step size towards the other object.
@@ -335,7 +344,6 @@ public class Entity extends GameObject {
 
                 if (canInteractWith(object)) {
                     if (object.onInteract(this)) return true;
-                } else {
                 }
 
                 return false;

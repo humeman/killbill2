@@ -79,8 +79,8 @@ public class DevGameScreen extends GameScreen {
         player = new Player(
             0, 
             0, 
-            1, 
-            1, 
+            0.95f, 
+            0.95f, 
             null
         );
         player.applyEffect(new SpeedEffect(999999999, 5));
@@ -137,7 +137,7 @@ public class DevGameScreen extends GameScreen {
 
     public void loadMap() {
         // Empty it out
-        gameRenderer.getObjects().clear();
+        gameRenderer.clearObjects();
 
         // Grab our map
         final KillBillMap map = mapPackage.map();

@@ -98,6 +98,7 @@ public abstract class DummyEntity extends Entity {
                 movedLastFrame = false;
             }
             setRotation(entityState.getRotation() - 180);
+            renderer.updateLocation(this);
             setHealth(entityState.getHealth());
             if (entityState.getHeldItemTexture() != null) {
                 boolean change = true;

@@ -76,7 +76,7 @@ public class DebugDisplay extends RendererExtension {
 
         addGenerator(
             delta -> {
-                return String.format("Kill Bill %s", System.getenv("VERSION"));
+                return String.format("Kill Bill %s", System.getenv("VERSION") != null ? System.getenv("VERSION") : "");
             }
         );
 

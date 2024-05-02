@@ -32,5 +32,5 @@ room {
 
 
 object flag=solid location=16,26 texture=objects_floor_plant_4
-object flag=solid location=7+3/8,26-1/8 texture=objects_water_splash size=3/4,3/4
+object location=7+3/8,26-1/8 texture=objects_water_splash size=3/4,3/4
 object flag=solid location=7+1/8,26+3/8 texture=objects_water_fountain size=3/4,3/4

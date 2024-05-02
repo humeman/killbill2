@@ -111,7 +111,7 @@ public class TouchInputDisplay extends RendererExtension {
                 )
                 .setTexture("ui_hud_chat")
                 .setSize(new Size.XScaledSize(.05f,1))
-                .setLocation(new Location.ScaledLocation(.94f,.94f))
+                .setLocation(new Location.ScaledLocation(.94f,.85f))
                 .build();
 
         Button pauseBtn = Button.newBuilder()
@@ -124,7 +124,7 @@ public class TouchInputDisplay extends RendererExtension {
                 )
                 .setTexture("ui_hud_pause")
                 .setSize(new Size.XScaledSize(.05f,1))
-                .setLocation(new Location.ScaledLocation(.87f,.94f))
+                .setLocation(new Location.ScaledLocation(.87f,.85f))
                 .build();
 
         Button interactBtn = Button.newBuilder()

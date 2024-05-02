@@ -109,6 +109,7 @@ public class DummyPlayer extends Entity {
                 movedLastFrame = false;
             }
             setRotation(userState.getRotation());
+            renderer.updateLocation(this);
             setHealth(userState.getHealth());
             if (userState.getHeldItemTexture() != null) {
                 boolean change = true;

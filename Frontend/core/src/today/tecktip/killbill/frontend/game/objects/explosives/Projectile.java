@@ -88,6 +88,8 @@ public class Projectile extends GameObject {
 
     private float currentSpeed;
 
+    private GameObject collidedObject;
+
     /**
      * Constructs a new projectile.
      */
@@ -182,20 +184,24 @@ public class Projectile extends GameObject {
 
         getRectangle().getLocation().offsetX(dx).offsetY(dy);
 
-        GameObject collidedObject = null;
-        for (final GameObject object : ((GameScreen) KillBillGame.get().getScreen()).getGameRenderer().getObjects()) {
-            if (object == this) continue;
-            if (launchedByMe && object == KillBillGame.get().getPlayer()) continue;
-            if (object.hasFlag(ObjectFlag.SOLID) && isCollidingWith(object)) {
-                // We are colliding with something.
-                if (data.getLaunchedBy() != null && object instanceof DummyPlayer) {
-                    if (((DummyPlayer) object).getUserState().getUserId().equals(data.getLaunchedBy())) continue;
+        collidedObject = null;
+        GameScreen currentScreen = (GameScreen) KillBillGame.get().getScreen();
+        currentScreen.getGameRenderer().forEachObject(
+            object -> {
+                if (object == this) return false;
+                if (launchedByMe && object == KillBillGame.get().getPlayer()) return false;
+                if (object.hasFlag(ObjectFlag.SOLID) && isCollidingWith(object)) {
+                    // We are colliding with something.
+                    if (data.getLaunchedBy() != null && object instanceof DummyPlayer) {
+                        if (((DummyPlayer) object).getUserState().getUserId().equals(data.getLaunchedBy())) return false;
+                    }
+        
+                    collidedObject = object;
+                    return true;
                 }
-
-                collidedObject = object;
-                break;
+                return false;
             }
-        }
+        );
 
         if (collidedObject != null) explode();
     }

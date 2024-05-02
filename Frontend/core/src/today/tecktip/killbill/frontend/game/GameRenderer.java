@@ -27,15 +27,9 @@ public class GameRenderer {
     private List<GameObject> toRemove;
 
     /**
-     * Notes if the list is currently being iterated through to prevent concurrent modification.
-     */
-    private boolean isIterating;
-
-    /**
      * Constructs an empty game renderer.
      */
     public GameRenderer() {
-        isIterating = false;
         objects = new ArrayList<>();
         toAdd = new ArrayList<>();
         toRemove = new ArrayList<>();
@@ -45,18 +39,16 @@ public class GameRenderer {
      * Adds an object to the renderer.
      * @param object Object to add
      */
-    public void addObject(final GameObject object) {
-        if (isIterating) toAdd.add(object);
-        else objects.add(object);
+    public synchronized void addObject(final GameObject object) {
+        toAdd.add(object);
     }
 
     /**
      * Removes an object from the renderer.
      * @param operator Object to remove
      */
-    public void removeObject(final GameObject object) {
-        if (isIterating) toRemove.add(object);
-        else objects.remove(object);
+    public synchronized void removeObject(final GameObject object) {
+        toRemove.add(object);
     }
 
     /**
@@ -64,26 +56,17 @@ public class GameRenderer {
      * @param operator Operator to call on each object.
      * @return True if an operation returned true (cancelled future executions)
      */
-    public boolean forEachObject(final GameObjectOperatorMethod operator) {
-        isIterating = true;
+    public synchronized boolean forEachObject(final GameObjectOperatorMethod operator) {
         for (final GameObject object : objects) {
             if (operator.run(object)) {
-                isIterating = false;
                 return true;
             }
         }
-        isIterating = false;
         return false;
     }
 
-    /**
-     * Gets the internal list used for this renderer's objects.
-     * <p>
-     * Probably don't add objects this way...
-     * @return Object list
-     */
-    public List<GameObject> getObjects() {
-        return objects;
+    public synchronized void clearObjects() {
+        objects.clear();
     }
 
     /**
@@ -91,7 +74,7 @@ public class GameRenderer {
      * @param batch Sprite batch to draw to
      * @param delta Time since last render
      */
-    public void render(final SpriteBatch batch, final float delta) {
+    public synchronized void render(final SpriteBatch batch, final float delta) {
         if (toAdd.size() != 0) {
             for (final GameObject o : toAdd) {
                 objects.add(o);
@@ -105,11 +88,9 @@ public class GameRenderer {
             toRemove.clear();
         }
 
-        isIterating = true;
         for (final GameObject object : objects) {
             object.renderTo(delta, batch);
         }
-        isIterating = false;
     }
 
     /**

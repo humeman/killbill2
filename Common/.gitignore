@@ -18,6 +18,8 @@ hs_err_pid*
 /android/out/
 com_crashlytics_export_strings.xml
 
+bin
+
 ## Eclipse
 
 .classpath

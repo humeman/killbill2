@@ -231,7 +231,7 @@ public class CreateGameScreen extends MenuScreen {
     public void onSwitch() {
         gameName.setText("");
         username.setText("");
-        mapI = 0;
+        mapI = 1;
         invitedUsers.clear();
         populateUsers();
         populateMap();
